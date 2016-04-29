@@ -1,0 +1,26 @@
+2016-04-29 16:20:39,152 INFO  [org.jboss.modules] (main) JBoss Modules version 1.4.3.Final
+2016-04-29 16:20:39,307 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2016-04-29 16:20:39,341 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0049: WildFly Full 9.0.2.Final (WildFly Core 1.0.2.Final) starting
+2016-04-29 16:20:39,872 INFO  [org.jboss.as.host.controller] (Controller Boot Thread) WFLYHC0003: Creating http management service using network interface (management) port (29990) securePort (-1)
+2016-04-29 16:20:39,873 INFO  [org.xnio] (MSC service thread 1-1) XNIO version 3.3.1.Final
+2016-04-29 16:20:39,883 INFO  [org.xnio.nio] (MSC service thread 1-1) XNIO NIO Implementation Version 3.3.1.Final
+2016-04-29 16:20:39,972 INFO  [org.jboss.remoting] (MSC service thread 1-1) JBoss Remoting version 4.0.9.Final
+2016-04-29 16:20:40,033 INFO  [org.jboss.as.remoting] (MSC service thread 1-1) WFLYRMT0001: Listening on 127.0.0.1:29999
+2016-04-29 16:20:42,247 INFO  [org.jboss.as.host.controller] (Controller Boot Thread) WFLYHC0148: Connected to master host controller at remote://127.0.0.1:9999
+2016-04-29 16:20:42,323 INFO  [org.jboss.as.host.controller] (Controller Boot Thread) WFLYHC0023: Starting server SOAP-server-one
+2016-04-29 16:20:43,825 INFO  [org.jboss.as.host.controller] (Remoting "slave-2:MANAGEMENT" task-11) WFLYHC0021: Server [Server:SOAP-server-one] connected using connection [Channel ID 0a09f368 (inbound) of Remoting connection 108e241f to /127.0.0.1:54045]
+2016-04-29 16:20:43,873 INFO  [org.jboss.as.host.controller] (Controller Boot Thread) WFLYHC0023: Starting server SOAP-server-two
+2016-04-29 16:20:43,886 INFO  [org.jboss.as.host.controller] (server-registration-threads - 1) WFLYHC0020: Registering server SOAP-server-one
+2016-04-29 16:20:47,485 INFO  [org.jboss.as.host.controller] (Remoting "slave-2:MANAGEMENT" task-16) WFLYHC0021: Server [Server:SOAP-server-two] connected using connection [Channel ID 14cee470 (inbound) of Remoting connection 21d51492 to /127.0.0.1:53817]
+2016-04-29 16:20:47,543 INFO  [org.jboss.as.host.controller] (server-registration-threads - 1) WFLYHC0020: Registering server SOAP-server-two
+2016-04-29 16:20:47,550 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:29990/management
+2016-04-29 16:20:47,551 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:29990
+2016-04-29 16:20:47,552 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 9.0.2.Final (WildFly Core 1.0.2.Final) (Host Controller) started in 8710ms - Started 49 of 51 services (16 services are lazy, passive or on-demand)
+2016-04-29 16:23:29,164 INFO  [org.jboss.as.host.controller] (Remoting "slave-2:MANAGEMENT" task-2) WFLYHC0029: Unregistered at domain controller
+2016-04-29 16:23:29,202 INFO  [org.jboss.as.host.controller] (Host Controller Service Threads - 7) WFLYHC0024: Stopping server SOAP-server-one
+2016-04-29 16:23:29,261 INFO  [org.jboss.as.host.controller] (Remoting "slave-2:MANAGEMENT" task-5) WFLYHC0027: Unregistering server SOAP-server-two
+2016-04-29 16:23:29,289 INFO  [org.jboss.as.host.controller] (Host Controller Service Threads - 7) WFLYHC0024: Stopping server SOAP-server-two
+2016-04-29 16:23:29,295 INFO  [org.jboss.as.host.controller] (Remoting "slave-2:MANAGEMENT" task-7) WFLYHC0027: Unregistering server SOAP-server-one
+2016-04-29 16:23:29,390 INFO  [org.jboss.as.host.controller] (ProcessControllerConnection-thread - 2) WFLYHC0027: Unregistering server SOAP-server-two
+2016-04-29 16:23:29,392 INFO  [org.jboss.as.host.controller] (ProcessControllerConnection-thread - 2) WFLYHC0027: Unregistering server SOAP-server-one
+2016-04-29 16:23:29,437 INFO  [org.jboss.as] (MSC service thread 1-5) WFLYSRV0050: WildFly Full 9.0.2.Final (WildFly Core 1.0.2.Final) stopped in 291ms

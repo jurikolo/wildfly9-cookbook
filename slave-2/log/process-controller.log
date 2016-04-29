@@ -1,0 +1,12 @@
+2016-04-29 16:20:38,584 INFO  [org.jboss.modules] (main) JBoss Modules version 1.4.3.Final
+2016-04-29 16:20:38,708 INFO  [org.jboss.as.process.Host Controller.status] (main) WFLYPC0018: Starting process 'Host Controller'
+2016-04-29 16:20:42,379 INFO  [org.jboss.as.process.Server:SOAP-server-one.status] (ProcessController-threads - 3) WFLYPC0018: Starting process 'Server:SOAP-server-one'
+2016-04-29 16:20:43,916 INFO  [org.jboss.as.process.Server:SOAP-server-two.status] (ProcessController-threads - 3) WFLYPC0018: Starting process 'Server:SOAP-server-two'
+2016-04-29 16:23:29,129 INFO  [org.jboss.as.process] (Shutdown thread) WFLYPC0017: Shutting down process controller
+2016-04-29 16:23:29,130 INFO  [org.jboss.as.process.Host Controller.status] (Shutdown thread) WFLYPC0019: Stopping process 'Host Controller'
+2016-04-29 16:23:29,294 INFO  [org.jboss.as.process.Server:SOAP-server-one.status] (ProcessController-threads - 4) WFLYPC0019: Stopping process 'Server:SOAP-server-one'
+2016-04-29 16:23:29,323 INFO  [org.jboss.as.process.Server:SOAP-server-two.status] (ProcessController-threads - 5) WFLYPC0019: Stopping process 'Server:SOAP-server-two'
+2016-04-29 16:23:29,349 INFO  [org.jboss.as.process.Server:SOAP-server-two.status] (reaper for Server:SOAP-server-two) WFLYPC0011: Process 'Server:SOAP-server-two' finished with an exit status of 130
+2016-04-29 16:23:29,358 INFO  [org.jboss.as.process.Server:SOAP-server-one.status] (reaper for Server:SOAP-server-one) WFLYPC0011: Process 'Server:SOAP-server-one' finished with an exit status of 130
+2016-04-29 16:23:29,450 INFO  [org.jboss.as.process.Host Controller.status] (reaper for Host Controller) WFLYPC0011: Process 'Host Controller' finished with an exit status of 130
+2016-04-29 16:23:29,451 INFO  [org.jboss.as.process] (Shutdown thread) WFLYPC0016: All processes finished; exiting
