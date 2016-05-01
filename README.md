@@ -38,7 +38,8 @@ http://localhost:8280/cluster-test/ for results
 
 # Wildfly 9 domain mode clustered
 This examples configures Wildfly 9 domain with no management console available
-(due to no server configured) and 1 slave with 2 servers.
+(due to no server configured) and 1 slave with 2 servers as described in a book
+"Wildfly Cookbook", pages 193-203
 HOW TO
 ------
 ```bash
