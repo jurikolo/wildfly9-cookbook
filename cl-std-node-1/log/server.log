@@ -1,0 +1,77 @@
+2016-05-01 16:08:02,468 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 40) WFLYCLINF0001: Activating Infinispan subsystem.
+2016-05-01 16:08:02,486 INFO  [org.jboss.as.clustering.jgroups] (ServerService Thread Pool -- 44) WFLYCLJG0001: Activating JGroups subsystem.
+2016-05-01 16:08:02,508 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 57) WFLYSEC0002: Activating Security Subsystem
+2016-05-01 16:08:02,510 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 58) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2016-05-01 16:08:02,520 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 35) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2016-05-01 16:08:02,527 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 39) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2016-05-01 16:08:02,528 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 47) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2016-05-01 16:08:02,532 INFO  [org.jboss.as.security] (MSC service thread 1-1) WFLYSEC0001: Current PicketBox version=4.9.2.Final
+2016-05-01 16:08:02,547 INFO  [org.jboss.as.connector] (MSC service thread 1-3) WFLYJCA0009: Starting JCA Subsystem (IronJacamar 1.2.5.Final)
+2016-05-01 16:08:02,558 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 50) WFLYNAM0001: Activating Naming Subsystem
+2016-05-01 16:08:02,560 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 60) WFLYWS0002: Activating WebServices Extension
+2016-05-01 16:08:02,548 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 4.0.9.Final
+2016-05-01 16:08:02,577 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = h2
+2016-05-01 16:08:02,754 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0003: Undertow 1.2.9.Final starting
+2016-05-01 16:08:02,754 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 59) WFLYUT0003: Undertow 1.2.9.Final starting
+2016-05-01 16:08:02,776 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2016-05-01 16:08:02,781 INFO  [org.jboss.as.naming] (MSC service thread 1-6) WFLYNAM0003: Starting Naming Service
+2016-05-01 16:08:02,982 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 59) WFLYUT0014: Creating file handler for path /home/jurikolo/wf_cookbook/wildfly902/welcome-content
+2016-05-01 16:08:02,998 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0012: Started server default-server.
+2016-05-01 16:08:03,024 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0018: Host default-host starting
+2016-05-01 16:08:03,074 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow AJP listener ajp listening on /127.0.0.1:8109
+2016-05-01 16:08:03,079 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0006: Undertow HTTP listener default listening on /127.0.0.1:8180
+2016-05-01 16:08:03,082 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 62) MODCLUSTER000001: Initializing mod_cluster version 1.3.1.Final
+2016-05-01 16:08:03,123 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 62) MODCLUSTER000032: Listening to proxy advertisements on /224.0.1.105:23364
+2016-05-01 16:08:03,327 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) WFLYDS0013: Started FileSystemDeploymentService for directory /home/jurikolo/wf_cookbook/wildfly902/cl-std-node-1/deployments
+2016-05-01 16:08:03,337 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-2) WFLYSRV0027: Starting deployment of "example.war" (runtime-name: "example.war")
+2016-05-01 16:08:03,338 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "cluster-test.war" (runtime-name: "cluster-test.war")
+2016-05-01 16:08:03,503 INFO  [org.jboss.ws.common.management] (MSC service thread 1-4) JBWS022052: Starting JBoss Web Services - Stack CXF Server 5.0.0.Final
+2016-05-01 16:08:04,178 WARNING [org.jgroups.protocols.UDP] (MSC service thread 1-2) JGRP000015: the send buffer of socket DatagramSocket was set to 640KB, but the OS only allocated 212.99KB. This might lead to performance problems. Please set your max send buffer in the OS correctly (e.g. net.core.wmem_max on Linux)
+2016-05-01 16:08:04,178 WARNING [org.jgroups.protocols.UDP] (MSC service thread 1-2) JGRP000015: the receive buffer of socket DatagramSocket was set to 20MB, but the OS only allocated 212.99KB. This might lead to performance problems. Please set your max receive buffer in the OS correctly (e.g. net.core.rmem_max on Linux)
+2016-05-01 16:08:04,179 WARNING [org.jgroups.protocols.UDP] (MSC service thread 1-2) JGRP000015: the send buffer of socket MulticastSocket was set to 640KB, but the OS only allocated 212.99KB. This might lead to performance problems. Please set your max send buffer in the OS correctly (e.g. net.core.wmem_max on Linux)
+2016-05-01 16:08:04,180 WARNING [org.jgroups.protocols.UDP] (MSC service thread 1-2) JGRP000015: the receive buffer of socket MulticastSocket was set to 25MB, but the OS only allocated 212.99KB. This might lead to performance problems. Please set your max receive buffer in the OS correctly (e.g. net.core.rmem_max on Linux)
+2016-05-01 16:08:04,186 INFO  [stdout] (MSC service thread 1-2) 
+2016-05-01 16:08:04,186 INFO  [stdout] (MSC service thread 1-2) -------------------------------------------------------------------
+2016-05-01 16:08:04,186 INFO  [stdout] (MSC service thread 1-2) GMS: address=node-1, cluster=ee, physical address=127.0.0.1:55300
+2016-05-01 16:08:04,186 INFO  [stdout] (MSC service thread 1-2) -------------------------------------------------------------------
+2016-05-01 16:08:07,352 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 62) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-05-01 16:08:07,358 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 62) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-05-01 16:08:07,360 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 64) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-05-01 16:08:07,362 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 64) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-05-01 16:08:07,660 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (ServerService Thread Pool -- 63) ISPN000078: Starting JGroups channel web
+2016-05-01 16:08:07,679 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (ServerService Thread Pool -- 63) ISPN000094: Received new cluster view for channel web: [node-1|0] (1) [node-1]
+2016-05-01 16:08:07,691 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (ServerService Thread Pool -- 63) ISPN000079: Channel web local address is node-1, physical addresses are [127.0.0.1:55300]
+2016-05-01 16:08:07,696 INFO  [org.infinispan.factories.GlobalComponentRegistry] (ServerService Thread Pool -- 63) ISPN000128: Infinispan version: Infinispan 'Insanely Bad Elf' 7.2.3.Final
+2016-05-01 16:08:07,973 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 64) WFLYCLINF0002: Started cluster-test.war cache from web container
+2016-05-01 16:08:07,973 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 63) WFLYCLINF0002: Started dist cache from web container
+2016-05-01 16:08:53,294 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2016-05-01 16:08:53,532 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 68) WFLYUT0021: Registered web context: /example
+2016-05-01 16:08:53,570 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 69) WFLYUT0021: Registered web context: /cluster-test
+2016-05-01 16:08:53,678 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 36) WFLYSRV0010: Deployed "example.war" (runtime-name : "example.war")
+2016-05-01 16:08:53,678 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 36) WFLYSRV0010: Deployed "cluster-test.war" (runtime-name : "cluster-test.war")
+2016-05-01 16:08:53,863 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:10090/management
+2016-05-01 16:08:53,864 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:10090
+2016-05-01 16:08:53,864 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 9.0.2.Final (WildFly Core 1.0.2.Final) started in 53390ms - Started 405 of 592 services (296 services are lazy, passive or on-demand)
+2016-05-01 16:10:54,087 INFO  [stdout] (default task-8) ********************************+
+2016-05-01 16:10:54,087 INFO  [stdout] (default task-8) Visitor(s): 0
+2016-05-01 16:10:54,087 INFO  [stdout] (default task-8) ********************************+
+2016-05-01 16:10:56,787 INFO  [stdout] (default task-9) ********************************+
+2016-05-01 16:10:56,788 INFO  [stdout] (default task-9) Visitor(s): 1
+2016-05-01 16:10:56,788 INFO  [stdout] (default task-9) ********************************+
+2016-05-01 16:10:58,764 INFO  [stdout] (default task-10) ********************************+
+2016-05-01 16:10:58,764 INFO  [stdout] (default task-10) Visitor(s): 2
+2016-05-01 16:10:58,764 INFO  [stdout] (default task-10) ********************************+
+2016-05-01 16:10:59,301 INFO  [stdout] (default task-11) ********************************+
+2016-05-01 16:10:59,301 INFO  [stdout] (default task-11) Visitor(s): 3
+2016-05-01 16:10:59,302 INFO  [stdout] (default task-11) ********************************+
+2016-05-01 16:10:59,763 INFO  [stdout] (default task-12) ********************************+
+2016-05-01 16:10:59,764 INFO  [stdout] (default task-12) Visitor(s): 4
+2016-05-01 16:10:59,764 INFO  [stdout] (default task-12) ********************************+
+2016-05-01 16:11:59,889 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (Incoming-2,ee,node-1) ISPN000094: Received new cluster view for channel web: [node-1|1] (2) [node-1, node-2]
+2016-05-01 16:12:00,625 INFO  [org.infinispan.CLUSTER] (remote-thread--p3-t4) ISPN000310: Starting cluster-wide rebalance for cache cluster-test.war, topology CacheTopology{id=1, rebalanceId=1, currentCH=DefaultConsistentHash{ns=80, owners = (1)[node-1: 80+0]}, pendingCH=DefaultConsistentHash{ns=80, owners = (2)[node-1: 40+40, node-2: 40+40]}, unionCH=null, actualMembers=[node-1, node-2]}
+2016-05-01 16:12:00,625 INFO  [org.infinispan.CLUSTER] (remote-thread--p3-t3) ISPN000310: Starting cluster-wide rebalance for cache dist, topology CacheTopology{id=1, rebalanceId=1, currentCH=DefaultConsistentHash{ns=80, owners = (1)[node-1: 80+0]}, pendingCH=DefaultConsistentHash{ns=80, owners = (2)[node-1: 40+40, node-2: 40+40]}, unionCH=null, actualMembers=[node-1, node-2]}
+2016-05-01 16:12:00,785 INFO  [org.infinispan.CLUSTER] (remote-thread--p3-t4) ISPN000336: Finished cluster-wide rebalance for cache dist, topology id = 1
+2016-05-01 16:12:00,787 INFO  [org.infinispan.CLUSTER] (remote-thread--p3-t4) ISPN000336: Finished cluster-wide rebalance for cache cluster-test.war, topology id = 1
+2016-05-01 16:12:46,216 INFO  [stdout] (default task-13) ********************************+
+2016-05-01 16:12:46,216 INFO  [stdout] (default task-13) Visitor(s): 5
+2016-05-01 16:12:46,216 INFO  [stdout] (default task-13) ********************************+

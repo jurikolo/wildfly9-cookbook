@@ -1,0 +1,469 @@
+2016-04-27 05:28:42,789 INFO  [org.jboss.modules] (main) JBoss Modules version 1.4.3.Final
+2016-04-27 05:28:43,002 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2016-04-27 05:28:43,065 INFO  [org.jboss.as] (MSC service thread 1-8) WFLYSRV0049: WildFly Full 9.0.2.Final (WildFly Core 1.0.2.Final) starting
+2016-04-27 05:28:43,067 DEBUG [org.jboss.as.config] (MSC service thread 1-8) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/jurikolo/wf_cookbook/wildfly902/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /opt/oracle/jdk1.8.0_45x64/jre/lib/endorsed
+	java.ext.dirs = /opt/oracle/jdk1.8.0_45x64/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /opt/oracle/jdk1.8.0_45x64/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_45-b14
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_45
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.45-b02
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.home.dir = /home/jurikolo/wf_cookbook/wildfly902
+	jboss.host.name = t2007030
+	jboss.modules.dir = /home/jurikolo/wf_cookbook/wildfly902/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = t2007030
+	jboss.qualified.host.name = t2007030.tele2.net
+	jboss.server.base.dir = /home/jurikolo/wf_cookbook/wildfly902/standalone
+	jboss.server.config.dir = /home/jurikolo/wf_cookbook/wildfly902/standalone/configuration
+	jboss.server.data.dir = /home/jurikolo/wf_cookbook/wildfly902/standalone/data
+	jboss.server.deploy.dir = /home/jurikolo/wf_cookbook/wildfly902/standalone/data/content
+	jboss.server.log.dir = /home/jurikolo/wf_cookbook/wildfly902/standalone/log
+	jboss.server.name = t2007030
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/jurikolo/wf_cookbook/wildfly902/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/jurikolo/wf_cookbook/wildfly902/standalone/configuration/logging.properties
+	module.path = /home/jurikolo/wf_cookbook/wildfly902/modules
+	org.jboss.boot.log.file = /home/jurikolo/wf_cookbook/wildfly902/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 4.4.8-300.fc23.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /opt/oracle/jdk1.8.0_45x64/jre/lib/resources.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/rt.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/sunrsasign.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/jsse.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/jce.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/charsets.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/jfr.jar:/opt/oracle/jdk1.8.0_45x64/jre/classes
+	sun.boot.library.path = /opt/oracle/jdk1.8.0_45x64/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.desktop = gnome
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /home/jurikolo/wf_cookbook/wildfly902/jboss-modules.jar -mp /home/jurikolo/wf_cookbook/wildfly902/modules org.jboss.as.standalone -Djboss.home.dir=/home/jurikolo/wf_cookbook/wildfly902 -Djboss.server.base.dir=/home/jurikolo/wf_cookbook/wildfly902/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /home/jurikolo/wf_cookbook/wildfly902/bin
+	user.home = /home/jurikolo
+	user.language = en
+	user.name = jurikolo
+	user.timezone = Europe/Riga
+2016-04-27 05:28:43,068 DEBUG [org.jboss.as.config] (MSC service thread 1-8) VM Arguments: -D[Standalone] -XX:+UseCompressedOops -XX:+UseCompressedOops -Xms64m -Xmx512m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/jurikolo/wf_cookbook/wildfly902/standalone/log/server.log -Dlogging.configuration=file:/home/jurikolo/wf_cookbook/wildfly902/standalone/configuration/logging.properties 
+2016-04-27 05:28:44,143 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 19) WFLYCTL0028: Attribute 'job-repository-type' in the resource at address '/subsystem=batch' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2016-04-27 05:28:44,144 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 2) WFLYCTL0028: Attribute 'enabled' in the resource at address '/subsystem=datasources/data-source=ExampleDS' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2016-04-27 05:28:44,207 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2016-04-27 05:28:44,245 INFO  [org.xnio] (MSC service thread 1-5) XNIO version 3.3.1.Final
+2016-04-27 05:28:44,254 INFO  [org.xnio.nio] (MSC service thread 1-5) XNIO NIO Implementation Version 3.3.1.Final
+2016-04-27 05:28:44,308 INFO  [org.jboss.remoting] (MSC service thread 1-5) JBoss Remoting version 4.0.9.Final
+2016-04-27 05:28:44,341 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 38) WFLYCLINF0001: Activating Infinispan subsystem.
+2016-04-27 05:28:44,352 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 37) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2016-04-27 05:28:44,355 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 33) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2016-04-27 05:28:44,395 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 46) WFLYNAM0001: Activating Naming Subsystem
+2016-04-27 05:28:44,414 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 44) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2016-04-27 05:28:44,418 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 53) WFLYSEC0002: Activating Security Subsystem
+2016-04-27 05:28:44,424 INFO  [org.jboss.as.security] (MSC service thread 1-5) WFLYSEC0001: Current PicketBox version=4.9.2.Final
+2016-04-27 05:28:44,432 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 54) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2016-04-27 05:28:44,449 INFO  [org.jboss.as.connector] (MSC service thread 1-2) WFLYJCA0009: Starting JCA Subsystem (IronJacamar 1.2.5.Final)
+2016-04-27 05:28:44,485 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = h2
+2016-04-27 05:28:44,496 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 56) WFLYWS0002: Activating WebServices Extension
+2016-04-27 05:28:44,512 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-2) WFLYUT0003: Undertow 1.2.9.Final starting
+2016-04-27 05:28:44,513 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 55) WFLYUT0003: Undertow 1.2.9.Final starting
+2016-04-27 05:28:44,531 INFO  [org.jboss.as.naming] (MSC service thread 1-5) WFLYNAM0003: Starting Naming Service
+2016-04-27 05:28:44,532 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2016-04-27 05:28:44,814 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 55) WFLYUT0014: Creating file handler for path /home/jurikolo/wf_cookbook/wildfly902/welcome-content
+2016-04-27 05:28:44,848 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0012: Started server default-server.
+2016-04-27 05:28:44,855 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0018: Host default-host starting
+2016-04-27 05:28:45,038 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0006: Undertow HTTP listener default listening on /127.0.0.1:8080
+2016-04-27 05:28:45,204 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2016-04-27 05:28:45,261 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) WFLYDS0013: Started FileSystemDeploymentService for directory /home/jurikolo/wf_cookbook/wildfly902/standalone/deployments
+2016-04-27 05:28:45,405 INFO  [org.jboss.ws.common.management] (MSC service thread 1-7) JBWS022052: Starting JBoss Web Services - Stack CXF Server 5.0.0.Final
+2016-04-27 05:28:45,561 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2016-04-27 05:28:45,562 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2016-04-27 05:28:45,562 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 9.0.2.Final (WildFly Core 1.0.2.Final) started in 3120ms - Started 203 of 379 services (210 services are lazy, passive or on-demand)
+2016-04-27 05:38:48,771 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested.
+2016-04-27 05:38:48,791 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-5) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2016-04-27 05:38:48,798 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0019: Host default-host stopping
+2016-04-27 05:38:48,809 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-2) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2016-04-27 05:38:48,813 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0008: Undertow HTTP listener default suspending
+2016-04-27 05:38:48,820 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0007: Undertow HTTP listener default stopped, was bound to /127.0.0.1:8080
+2016-04-27 05:38:48,821 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0004: Undertow 1.2.9.Final stopping
+2016-04-27 05:38:48,830 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0050: WildFly Full 9.0.2.Final (WildFly Core 1.0.2.Final) stopped in 38ms
+2016-04-27 05:54:59,592 INFO  [org.jboss.modules] (main) JBoss Modules version 1.4.3.Final
+2016-04-27 05:54:59,795 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2016-04-27 05:54:59,854 INFO  [org.jboss.as] (MSC service thread 1-5) WFLYSRV0049: WildFly Full 9.0.2.Final (WildFly Core 1.0.2.Final) starting
+2016-04-27 05:54:59,855 DEBUG [org.jboss.as.config] (MSC service thread 1-5) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/jurikolo/wf_cookbook/wildfly902/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /opt/oracle/jdk1.8.0_45x64/jre/lib/endorsed
+	java.ext.dirs = /opt/oracle/jdk1.8.0_45x64/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /opt/oracle/jdk1.8.0_45x64/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_45-b14
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_45
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.45-b02
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.home.dir = /home/jurikolo/wf_cookbook/wildfly902
+	jboss.host.name = t2007030
+	jboss.http.pot = 8180
+	jboss.modules.dir = /home/jurikolo/wf_cookbook/wildfly902/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = t2007030
+	jboss.qualified.host.name = t2007030.tele2.net
+	jboss.server.base.dir = /home/jurikolo/wf_cookbook/wildfly902/node-1
+	jboss.server.config.dir = /home/jurikolo/wf_cookbook/wildfly902/node-1/configuration
+	jboss.server.data.dir = /home/jurikolo/wf_cookbook/wildfly902/node-1/data
+	jboss.server.deploy.dir = /home/jurikolo/wf_cookbook/wildfly902/node-1/data/content
+	jboss.server.log.dir = /home/jurikolo/wf_cookbook/wildfly902/node-1/log
+	jboss.server.name = t2007030
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/jurikolo/wf_cookbook/wildfly902/node-1/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/jurikolo/wf_cookbook/wildfly902/node-1/configuration/logging.properties
+	module.path = /home/jurikolo/wf_cookbook/wildfly902/modules
+	org.jboss.boot.log.file = /home/jurikolo/wf_cookbook/wildfly902/node-1/log/server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 4.4.8-300.fc23.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /opt/oracle/jdk1.8.0_45x64/jre/lib/resources.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/rt.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/sunrsasign.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/jsse.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/jce.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/charsets.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/jfr.jar:/opt/oracle/jdk1.8.0_45x64/jre/classes
+	sun.boot.library.path = /opt/oracle/jdk1.8.0_45x64/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.desktop = gnome
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /home/jurikolo/wf_cookbook/wildfly902/jboss-modules.jar -mp /home/jurikolo/wf_cookbook/wildfly902/modules org.jboss.as.standalone -Djboss.home.dir=/home/jurikolo/wf_cookbook/wildfly902 -Djboss.server.base.dir=/home/jurikolo/wf_cookbook/wildfly902/node-1 -Djboss.server.base.dir=/home/jurikolo/wf_cookbook/wildfly902/node-1 -Djboss.http.pot=8180
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /home/jurikolo/wf_cookbook/wildfly902
+	user.home = /home/jurikolo
+	user.language = en
+	user.name = jurikolo
+	user.timezone = Europe/Riga
+2016-04-27 05:54:59,856 DEBUG [org.jboss.as.config] (MSC service thread 1-5) VM Arguments: -D[Standalone] -XX:+UseCompressedOops -XX:+UseCompressedOops -Xms64m -Xmx512m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/jurikolo/wf_cookbook/wildfly902/node-1/log/server.log -Dlogging.configuration=file:/home/jurikolo/wf_cookbook/wildfly902/node-1/configuration/logging.properties 
+2016-04-27 05:55:00,889 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 20) WFLYCTL0028: Attribute 'job-repository-type' in the resource at address '/subsystem=batch' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2016-04-27 05:55:00,892 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 11) WFLYCTL0028: Attribute 'enabled' in the resource at address '/subsystem=datasources/data-source=ExampleDS' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2016-04-27 05:55:00,926 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2016-04-27 05:55:00,955 INFO  [org.xnio] (MSC service thread 1-5) XNIO version 3.3.1.Final
+2016-04-27 05:55:00,965 INFO  [org.xnio.nio] (MSC service thread 1-5) XNIO NIO Implementation Version 3.3.1.Final
+2016-04-27 05:56:23,109 INFO  [org.jboss.modules] (main) JBoss Modules version 1.4.3.Final
+2016-04-27 05:56:23,302 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2016-04-27 05:56:23,357 INFO  [org.jboss.as] (MSC service thread 1-5) WFLYSRV0049: WildFly Full 9.0.2.Final (WildFly Core 1.0.2.Final) starting
+2016-04-27 05:56:23,358 DEBUG [org.jboss.as.config] (MSC service thread 1-5) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/jurikolo/wf_cookbook/wildfly902/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /opt/oracle/jdk1.8.0_45x64/jre/lib/endorsed
+	java.ext.dirs = /opt/oracle/jdk1.8.0_45x64/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /opt/oracle/jdk1.8.0_45x64/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_45-b14
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_45
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.45-b02
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.home.dir = /home/jurikolo/wf_cookbook/wildfly902
+	jboss.host.name = t2007030
+	jboss.http.port = 8280
+	jboss.modules.dir = /home/jurikolo/wf_cookbook/wildfly902/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = t2007030
+	jboss.qualified.host.name = t2007030.tele2.net
+	jboss.server.base.dir = /home/jurikolo/wf_cookbook/wildfly902/node-2
+	jboss.server.config.dir = /home/jurikolo/wf_cookbook/wildfly902/node-2/configuration
+	jboss.server.data.dir = /home/jurikolo/wf_cookbook/wildfly902/node-2/data
+	jboss.server.deploy.dir = /home/jurikolo/wf_cookbook/wildfly902/node-2/data/content
+	jboss.server.log.dir = /home/jurikolo/wf_cookbook/wildfly902/node-2/log
+	jboss.server.name = t2007030
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/jurikolo/wf_cookbook/wildfly902/node-2/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/jurikolo/wf_cookbook/wildfly902/node-2/configuration/logging.properties
+	module.path = /home/jurikolo/wf_cookbook/wildfly902/modules
+	org.jboss.boot.log.file = /home/jurikolo/wf_cookbook/wildfly902/node-2/log/server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 4.4.8-300.fc23.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /opt/oracle/jdk1.8.0_45x64/jre/lib/resources.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/rt.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/sunrsasign.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/jsse.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/jce.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/charsets.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/jfr.jar:/opt/oracle/jdk1.8.0_45x64/jre/classes
+	sun.boot.library.path = /opt/oracle/jdk1.8.0_45x64/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.desktop = gnome
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /home/jurikolo/wf_cookbook/wildfly902/jboss-modules.jar -mp /home/jurikolo/wf_cookbook/wildfly902/modules org.jboss.as.standalone -Djboss.home.dir=/home/jurikolo/wf_cookbook/wildfly902 -Djboss.server.base.dir=/home/jurikolo/wf_cookbook/wildfly902/node-2 -Djboss.server.base.dir=/home/jurikolo/wf_cookbook/wildfly902/node-2 -Djboss.http.port=8280
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /home/jurikolo/wf_cookbook/wildfly902
+	user.home = /home/jurikolo
+	user.language = en
+	user.name = jurikolo
+	user.timezone = Europe/Riga
+2016-04-27 05:56:23,359 DEBUG [org.jboss.as.config] (MSC service thread 1-5) VM Arguments: -D[Standalone] -XX:+UseCompressedOops -XX:+UseCompressedOops -Xms64m -Xmx512m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/jurikolo/wf_cookbook/wildfly902/node-2/log/server.log -Dlogging.configuration=file:/home/jurikolo/wf_cookbook/wildfly902/node-2/configuration/logging.properties 
+2016-04-27 05:56:24,472 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 19) WFLYCTL0028: Attribute 'job-repository-type' in the resource at address '/subsystem=batch' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2016-04-27 05:56:24,505 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 7) WFLYCTL0028: Attribute 'enabled' in the resource at address '/subsystem=datasources/data-source=ExampleDS' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2016-04-27 05:56:24,532 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2016-04-27 05:56:24,561 INFO  [org.xnio] (MSC service thread 1-1) XNIO version 3.3.1.Final
+2016-04-27 05:56:24,572 INFO  [org.xnio.nio] (MSC service thread 1-1) XNIO NIO Implementation Version 3.3.1.Final
+2016-04-27 09:22:26,140 INFO  [org.jboss.modules] (main) JBoss Modules version 1.4.3.Final
+2016-04-27 09:22:26,332 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2016-04-27 09:22:26,393 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0049: WildFly Full 9.0.2.Final (WildFly Core 1.0.2.Final) starting
+2016-04-27 09:22:26,395 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/jurikolo/wf_cookbook/wildfly902/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /opt/oracle/jdk1.8.0_45x64/jre/lib/endorsed
+	java.ext.dirs = /opt/oracle/jdk1.8.0_45x64/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /opt/oracle/jdk1.8.0_45x64/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_45-b14
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_45
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.45-b02
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.home.dir = /home/jurikolo/wf_cookbook/wildfly902
+	jboss.host.name = t2007030
+	jboss.modules.dir = /home/jurikolo/wf_cookbook/wildfly902/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = t2007030
+	jboss.qualified.host.name = t2007030.tele2.net
+	jboss.server.base.dir = /home/jurikolo/wf_cookbook/wildfly902/standalone
+	jboss.server.config.dir = /home/jurikolo/wf_cookbook/wildfly902/standalone/configuration
+	jboss.server.data.dir = /home/jurikolo/wf_cookbook/wildfly902/standalone/data
+	jboss.server.deploy.dir = /home/jurikolo/wf_cookbook/wildfly902/standalone/data/content
+	jboss.server.log.dir = /home/jurikolo/wf_cookbook/wildfly902/standalone/log
+	jboss.server.name = t2007030
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/jurikolo/wf_cookbook/wildfly902/standalone/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/jurikolo/wf_cookbook/wildfly902/standalone/configuration/logging.properties
+	module.path = /home/jurikolo/wf_cookbook/wildfly902/modules
+	org.jboss.boot.log.file = /home/jurikolo/wf_cookbook/wildfly902/standalone/log/server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 4.4.8-300.fc23.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /opt/oracle/jdk1.8.0_45x64/jre/lib/resources.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/rt.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/sunrsasign.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/jsse.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/jce.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/charsets.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/jfr.jar:/opt/oracle/jdk1.8.0_45x64/jre/classes
+	sun.boot.library.path = /opt/oracle/jdk1.8.0_45x64/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.desktop = gnome
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /home/jurikolo/wf_cookbook/wildfly902/jboss-modules.jar -mp /home/jurikolo/wf_cookbook/wildfly902/modules org.jboss.as.standalone -Djboss.home.dir=/home/jurikolo/wf_cookbook/wildfly902 -Djboss.server.base.dir=/home/jurikolo/wf_cookbook/wildfly902/standalone
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /home/jurikolo/wf_cookbook/wildfly902
+	user.home = /home/jurikolo
+	user.language = en
+	user.name = jurikolo
+	user.timezone = Europe/Riga
+2016-04-27 09:22:26,395 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -D[Standalone] -XX:+UseCompressedOops -XX:+UseCompressedOops -Xms64m -Xmx512m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/jurikolo/wf_cookbook/wildfly902/standalone/log/server.log -Dlogging.configuration=file:/home/jurikolo/wf_cookbook/wildfly902/standalone/configuration/logging.properties 
+2016-04-27 09:22:27,512 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 19) WFLYCTL0028: Attribute 'job-repository-type' in the resource at address '/subsystem=batch' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2016-04-27 09:22:27,543 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 16) WFLYCTL0028: Attribute 'enabled' in the resource at address '/subsystem=datasources/data-source=ExampleDS' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2016-04-27 09:22:27,581 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2016-04-27 09:22:27,610 INFO  [org.xnio] (MSC service thread 1-3) XNIO version 3.3.1.Final
+2016-04-27 09:22:27,627 INFO  [org.xnio.nio] (MSC service thread 1-3) XNIO NIO Implementation Version 3.3.1.Final
+2016-04-27 09:22:27,672 INFO  [org.jboss.remoting] (MSC service thread 1-3) JBoss Remoting version 4.0.9.Final
+2016-04-27 09:22:27,729 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 37) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2016-04-27 09:22:27,732 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 33) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2016-04-27 09:22:27,743 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 38) WFLYCLINF0001: Activating Infinispan subsystem.
+2016-04-27 09:22:27,797 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 44) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2016-04-27 09:22:27,805 INFO  [org.jboss.as.connector] (MSC service thread 1-7) WFLYJCA0009: Starting JCA Subsystem (IronJacamar 1.2.5.Final)
+2016-04-27 09:22:27,805 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 46) WFLYNAM0001: Activating Naming Subsystem
+2016-04-27 09:22:27,816 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 53) WFLYSEC0002: Activating Security Subsystem
+2016-04-27 09:22:27,818 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 54) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2016-04-27 09:22:27,821 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-3) WFLYJCA0018: Started Driver service with driver-name = h2
+2016-04-27 09:22:27,826 INFO  [org.jboss.as.security] (MSC service thread 1-3) WFLYSEC0001: Current PicketBox version=4.9.2.Final
+2016-04-27 09:22:27,877 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 56) WFLYWS0002: Activating WebServices Extension
+2016-04-27 09:22:27,881 INFO  [org.jboss.as.naming] (MSC service thread 1-4) WFLYNAM0003: Starting Naming Service
+2016-04-27 09:22:27,882 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-4) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2016-04-27 09:22:27,925 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 55) WFLYUT0003: Undertow 1.2.9.Final starting
+2016-04-27 09:22:27,936 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0003: Undertow 1.2.9.Final starting
+2016-04-27 09:22:28,196 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0012: Started server default-server.
+2016-04-27 09:22:28,187 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 55) WFLYUT0014: Creating file handler for path /home/jurikolo/wf_cookbook/wildfly902/welcome-content
+2016-04-27 09:22:28,244 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0018: Host default-host starting
+2016-04-27 09:22:28,417 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTP listener default listening on /127.0.0.1:8080
+2016-04-27 09:22:28,639 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-5) WFLYDS0013: Started FileSystemDeploymentService for directory /home/jurikolo/wf_cookbook/wildfly902/standalone/deployments
+2016-04-27 09:22:28,697 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2016-04-27 09:22:28,793 INFO  [org.jboss.ws.common.management] (MSC service thread 1-7) JBWS022052: Starting JBoss Web Services - Stack CXF Server 5.0.0.Final
+2016-04-27 09:22:28,932 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:9990/management
+2016-04-27 09:22:28,933 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:9990
+2016-04-27 09:22:28,933 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 9.0.2.Final (WildFly Core 1.0.2.Final) started in 3034ms - Started 203 of 379 services (210 services are lazy, passive or on-demand)
+2016-04-27 09:23:08,679 INFO  [org.jboss.as.repository] (DeploymentScanner-threads - 1) WFLYDR0001: Content added at location /home/jurikolo/wf_cookbook/wildfly902/standalone/data/content/7f/bfeb940ea8d270caa79328e4d8aaae8cc2abb2/content
+2016-04-27 09:23:08,699 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0027: Starting deployment of "example.war" (runtime-name: "example.war")
+2016-04-27 09:23:09,214 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 63) WFLYUT0021: Registered web context: /example
+2016-04-27 09:23:09,281 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 1) WFLYSRV0010: Deployed "example.war" (runtime-name : "example.war")
+2016-04-27 09:24:14,379 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 65) WFLYUT0022: Unregistered web context: /example
+2016-04-27 09:24:14,409 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-2) HV000001: Hibernate Validator 5.1.3.Final
+2016-04-27 09:24:14,443 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-4) WFLYSRV0028: Stopped deployment example.war (runtime-name: example.war) in 69ms
+2016-04-27 09:24:14,457 INFO  [org.jboss.as.repository] (DeploymentScanner-threads - 2) WFLYDR0002: Content removed from location /home/jurikolo/wf_cookbook/wildfly902/standalone/data/content/7f/bfeb940ea8d270caa79328e4d8aaae8cc2abb2/content
+2016-04-27 09:24:14,457 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0009: Undeployed "example.war" (runtime-name: "example.war")
+2016-04-27 09:24:44,468 INFO  [org.jboss.as.repository] (DeploymentScanner-threads - 2) WFLYDR0001: Content added at location /home/jurikolo/wf_cookbook/wildfly902/standalone/data/content/7f/bfeb940ea8d270caa79328e4d8aaae8cc2abb2/content
+2016-04-27 09:24:44,470 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "example.war" (runtime-name: "example.war")
+2016-04-27 09:24:44,529 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 71) WFLYUT0021: Registered web context: /example
+2016-04-27 09:24:44,550 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0010: Deployed "example.war" (runtime-name : "example.war")
+2016-04-27 10:13:25,705 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested.
+2016-04-27 10:13:25,724 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 73) WFLYUT0022: Unregistered web context: /example
+2016-04-27 10:13:25,732 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0019: Host default-host stopping
+2016-04-27 10:13:25,739 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-4) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2016-04-27 10:13:25,751 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2016-04-27 10:13:25,757 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow HTTP listener default suspending
+2016-04-27 10:13:25,757 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0028: Stopped deployment example.war (runtime-name: example.war) in 45ms
+2016-04-27 10:13:25,758 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow HTTP listener default stopped, was bound to /127.0.0.1:8080
+2016-04-27 10:13:25,758 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0004: Undertow 1.2.9.Final stopping
+2016-04-27 10:13:25,773 INFO  [org.jboss.as] (MSC service thread 1-3) WFLYSRV0050: WildFly Full 9.0.2.Final (WildFly Core 1.0.2.Final) stopped in 60ms
