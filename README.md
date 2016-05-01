@@ -35,3 +35,25 @@ HOW TO
 ```
 Visit http://localhost:8180/cluster-test/ and
 http://localhost:8280/cluster-test/ for results
+
+# Wildfly 9 domain mode clustered
+This examples configures Wildfly 9 domain with no management console available
+(due to no server configured) and 1 slave with 2 servers.
+HOW TO
+------
+```bash
+1. Copy directories cl-dmn-master and cl-dmn-host-1 to the Wildfly9 directory
+2. Run domain controller: ./bin/domain.sh -Djboss.domain.base.dir=cl-dmn-master
+3. Run host-1:
+./bin/domain.sh -Djboss.domain.base.dir=cl-dmn-host-1 \
+-Djboss.domain.master.address=127.0.0.1
+```
+NOTE 1: you might have problems connecting slave to master due to both machenes
+are on localhost. As a workaround I added 2 domain controllers to slave
+host.xml so it searches for a DC longer
+NOTE 2: to deploy a package I run following command from a shell:
+```bash
+./jboss-cli.sh --connect --command="deploy --force \
+/home/jurikolo/wf_cookbook/wildfly902/cluster-test.war"
+```
+
