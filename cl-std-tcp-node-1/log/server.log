@@ -1,0 +1,341 @@
+2016-05-05 15:38:05,650 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 40) WFLYCLINF0001: Activating Infinispan subsystem.
+2016-05-05 15:38:05,667 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 39) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2016-05-05 15:38:05,714 INFO  [org.jboss.as.clustering.jgroups] (ServerService Thread Pool -- 44) WFLYCLJG0001: Activating JGroups subsystem.
+2016-05-05 15:38:05,718 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 50) WFLYNAM0001: Activating Naming Subsystem
+2016-05-05 15:38:05,722 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 47) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2016-05-05 15:38:05,734 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 57) WFLYSEC0002: Activating Security Subsystem
+2016-05-05 15:38:05,768 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 35) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2016-05-05 15:38:05,769 INFO  [org.jboss.as.security] (MSC service thread 1-1) WFLYSEC0001: Current PicketBox version=4.9.2.Final
+2016-05-05 15:38:05,769 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 58) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2016-05-05 15:38:05,777 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 60) WFLYWS0002: Activating WebServices Extension
+2016-05-05 15:38:05,791 INFO  [org.jboss.as.connector] (MSC service thread 1-3) WFLYJCA0009: Starting JCA Subsystem (IronJacamar 1.2.5.Final)
+2016-05-05 15:38:05,820 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 59) WFLYUT0003: Undertow 1.2.9.Final starting
+2016-05-05 15:38:05,821 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0003: Undertow 1.2.9.Final starting
+2016-05-05 15:38:05,822 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 4.0.9.Final
+2016-05-05 15:38:05,854 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = h2
+2016-05-05 15:38:05,859 INFO  [org.jboss.as.naming] (MSC service thread 1-5) WFLYNAM0003: Starting Naming Service
+2016-05-05 15:38:05,997 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-5) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2016-05-05 15:38:06,154 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 59) WFLYUT0014: Creating file handler for path /home/jurikolo/wf_cookbook/wildfly902/welcome-content
+2016-05-05 15:38:06,215 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0012: Started server default-server.
+2016-05-05 15:38:06,223 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0018: Host default-host starting
+2016-05-05 15:38:06,337 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTP listener default listening on /127.0.0.1:8180
+2016-05-05 15:38:06,338 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow AJP listener ajp listening on /127.0.0.1:8109
+2016-05-05 15:38:06,344 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 62) MODCLUSTER000001: Initializing mod_cluster version 1.3.1.Final
+2016-05-05 15:38:06,377 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 62) MODCLUSTER000032: Listening to proxy advertisements on /224.0.1.105:23364
+2016-05-05 15:38:06,596 INFO  [org.jboss.as.server.deployment.scanner] (MSC service thread 1-6) WFLYDS0013: Started FileSystemDeploymentService for directory /home/jurikolo/wf_cookbook/wildfly902/cl-std-tcp-node-1/deployments
+2016-05-05 15:38:06,597 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "cluster-test.war" (runtime-name: "cluster-test.war")
+2016-05-05 15:38:06,600 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0027: Starting deployment of "example.war" (runtime-name: "example.war")
+2016-05-05 15:38:06,772 INFO  [org.jboss.ws.common.management] (MSC service thread 1-3) JBWS022052: Starting JBoss Web Services - Stack CXF Server 5.0.0.Final
+2016-05-05 15:38:07,319 WARNING [org.jgroups.stack.Configurator] (MSC service thread 1-7) JGRP000014: Discovery.timeout has been deprecated: GMS.join_timeout should be used instead
+2016-05-05 15:38:07,320 WARNING [org.jgroups.stack.Configurator] (MSC service thread 1-7) JGRP000014: Discovery.num_initial_members has been deprecated: will be ignored
+2016-05-05 15:38:07,495 INFO  [stdout] (MSC service thread 1-6) 
+2016-05-05 15:38:07,495 INFO  [stdout] (MSC service thread 1-6) -------------------------------------------------------------------
+2016-05-05 15:38:07,495 INFO  [stdout] (MSC service thread 1-6) GMS: address=node-1, cluster=ee, physical address=127.0.0.1:7700
+2016-05-05 15:38:07,496 INFO  [stdout] (MSC service thread 1-6) -------------------------------------------------------------------
+2016-05-05 15:38:10,669 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 62) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-05-05 15:38:10,676 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 62) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-05-05 15:38:10,678 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 64) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-05-05 15:38:10,684 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 64) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-05-05 15:38:10,768 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (ServerService Thread Pool -- 63) ISPN000078: Starting JGroups channel web
+2016-05-05 15:38:10,780 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (ServerService Thread Pool -- 63) ISPN000094: Received new cluster view for channel web: [node-1|0] (1) [node-1]
+2016-05-05 15:38:10,791 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (ServerService Thread Pool -- 63) ISPN000079: Channel web local address is node-1, physical addresses are [127.0.0.1:7700]
+2016-05-05 15:38:10,801 INFO  [org.infinispan.factories.GlobalComponentRegistry] (ServerService Thread Pool -- 63) ISPN000128: Infinispan version: Infinispan 'Insanely Bad Elf' 7.2.3.Final
+2016-05-05 15:38:11,357 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 63) WFLYCLINF0002: Started dist cache from web container
+2016-05-05 15:38:11,357 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 62) WFLYCLINF0002: Started cluster-test.war cache from web container
+2016-05-05 15:38:56,445 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-8) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2016-05-05 15:38:56,580 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 70) WFLYUT0021: Registered web context: /example
+2016-05-05 15:38:56,593 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 68) WFLYUT0021: Registered web context: /cluster-test
+2016-05-05 15:38:56,666 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 36) WFLYSRV0010: Deployed "example.war" (runtime-name : "example.war")
+2016-05-05 15:38:56,666 INFO  [org.jboss.as.server] (ServerService Thread Pool -- 36) WFLYSRV0010: Deployed "cluster-test.war" (runtime-name : "cluster-test.war")
+2016-05-05 15:38:56,813 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:10090/management
+2016-05-05 15:38:56,814 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:10090
+2016-05-05 15:38:56,814 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 9.0.2.Final (WildFly Core 1.0.2.Final) started in 53164ms - Started 406 of 593 services (297 services are lazy, passive or on-demand)
+2016-05-05 15:39:30,156 INFO  [org.jboss.modules] (main) JBoss Modules version 1.4.3.Final
+2016-05-05 15:39:30,382 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2016-05-05 15:39:30,449 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0049: WildFly Full 9.0.2.Final (WildFly Core 1.0.2.Final) starting
+2016-05-05 15:39:30,451 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
+	[Standalone] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/jurikolo/wf_cookbook/wildfly902/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /opt/oracle/jdk1.8.0_45x64/jre/lib/endorsed
+	java.ext.dirs = /opt/oracle/jdk1.8.0_45x64/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /opt/oracle/jdk1.8.0_45x64/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_45-b14
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_45
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.45-b02
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.home.dir = /home/jurikolo/wf_cookbook/wildfly902
+	jboss.host.name = t2007030
+	jboss.modules.dir = /home/jurikolo/wf_cookbook/wildfly902/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = node-1
+	jboss.qualified.host.name = t2007030.tele2.net
+	jboss.server.base.dir = /home/jurikolo/wf_cookbook/wildfly902/cl-std-tcp-node-1
+	jboss.server.config.dir = /home/jurikolo/wf_cookbook/wildfly902/cl-std-tcp-node-1/configuration
+	jboss.server.data.dir = /home/jurikolo/wf_cookbook/wildfly902/cl-std-tcp-node-1/data
+	jboss.server.deploy.dir = /home/jurikolo/wf_cookbook/wildfly902/cl-std-tcp-node-1/data/content
+	jboss.server.log.dir = /home/jurikolo/wf_cookbook/wildfly902/cl-std-tcp-node-1/log
+	jboss.server.name = t2007030
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/jurikolo/wf_cookbook/wildfly902/cl-std-tcp-node-1/tmp
+	jboss.socket.binding.port-offset = 100
+	line.separator = 
+
+	logging.configuration = file:/home/jurikolo/wf_cookbook/wildfly902/cl-std-tcp-node-1/configuration/logging.properties
+	module.path = /home/jurikolo/wf_cookbook/wildfly902/modules
+	org.jboss.boot.log.file = /home/jurikolo/wf_cookbook/wildfly902/cl-std-tcp-node-1/log/server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 4.4.8-300.fc23.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /opt/oracle/jdk1.8.0_45x64/jre/lib/resources.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/rt.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/sunrsasign.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/jsse.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/jce.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/charsets.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/jfr.jar:/opt/oracle/jdk1.8.0_45x64/jre/classes
+	sun.boot.library.path = /opt/oracle/jdk1.8.0_45x64/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.desktop = gnome
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /home/jurikolo/wf_cookbook/wildfly902/jboss-modules.jar -mp /home/jurikolo/wf_cookbook/wildfly902/modules org.jboss.as.standalone -Djboss.home.dir=/home/jurikolo/wf_cookbook/wildfly902 -Djboss.server.base.dir=/home/jurikolo/wf_cookbook/wildfly902/cl-std-tcp-node-1 -Djboss.server.base.dir=cl-std-tcp-node-1 --server-config=standalone-ha.xml -Djboss.socket.binding.port-offset=100 -Djboss.node.name=node-1
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /home/jurikolo/wf_cookbook/wildfly902
+	user.home = /home/jurikolo
+	user.language = en
+	user.name = jurikolo
+	user.timezone = Europe/Riga
+2016-05-05 15:39:30,452 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -D[Standalone] -XX:+UseCompressedOops -XX:+UseCompressedOops -Xms64m -Xmx512m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true -Dorg.jboss.boot.log.file=/home/jurikolo/wf_cookbook/wildfly902/cl-std-tcp-node-1/log/server.log -Dlogging.configuration=file:/home/jurikolo/wf_cookbook/wildfly902/cl-std-tcp-node-1/configuration/logging.properties 
+2016-05-05 15:39:31,683 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 10) WFLYCTL0028: Attribute 'job-repository-type' in the resource at address '/subsystem=batch' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2016-05-05 15:39:31,685 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 6) WFLYCTL0028: Attribute 'enabled' in the resource at address '/subsystem=datasources/data-source=ExampleDS' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2016-05-05 15:39:31,706 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 20) WFLYCTL0028: Attribute 'default-stack' in the resource at address '/subsystem=jgroups' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2016-05-05 15:39:31,796 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 75) WFLYUT0022: Unregistered web context: /example
+2016-05-05 15:39:31,842 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-8) HV000001: Hibernate Validator 5.1.3.Final
+2016-05-05 15:39:31,918 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0028: Stopped deployment example.war (runtime-name: example.war) in 127ms
+2016-05-05 15:39:31,921 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-7) WFLYSRV0027: Starting deployment of "example.war" (runtime-name: "example.war")
+2016-05-05 15:39:31,947 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 77) WFLYUT0022: Unregistered web context: /cluster-test
+2016-05-05 15:39:31,962 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 79) ISPN000029: Passivating all entries to disk
+2016-05-05 15:39:31,984 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 79) ISPN000030: Passivated 0 entries in 22 milliseconds
+2016-05-05 15:39:32,012 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0039: Creating http management service using socket-binding (management-http)
+2016-05-05 15:39:32,029 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 79) WFLYCLINF0003: Stopped cluster-test.war cache from web container
+2016-05-05 15:39:32,053 INFO  [org.xnio] (MSC service thread 1-4) XNIO version 3.3.1.Final
+2016-05-05 15:39:32,066 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment cluster-test.war (runtime-name: cluster-test.war) in 121ms
+2016-05-05 15:39:32,067 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 76) ISPN000029: Passivating all entries to disk
+2016-05-05 15:39:32,068 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 76) ISPN000030: Passivated 0 entries in 0 milliseconds
+2016-05-05 15:39:32,077 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 77) WFLYUT0021: Registered web context: /example
+2016-05-05 15:39:32,083 INFO  [org.xnio.nio] (MSC service thread 1-4) XNIO NIO Implementation Version 3.3.1.Final
+2016-05-05 15:39:32,087 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 76) WFLYCLINF0003: Stopped dist cache from web container
+2016-05-05 15:39:32,087 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0027: Starting deployment of "cluster-test.war" (runtime-name: "cluster-test.war")
+2016-05-05 15:39:32,131 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-7) ISPN000080: Disconnecting JGroups channel web
+2016-05-05 15:39:32,132 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-7) ISPN000082: Stopping the RpcDispatcher for channel web
+2016-05-05 15:39:32,237 INFO  [org.jboss.remoting] (MSC service thread 1-4) JBoss Remoting version 4.0.9.Final
+2016-05-05 15:39:32,251 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 35) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2016-05-05 15:39:32,274 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 39) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2016-05-05 15:39:32,280 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 40) WFLYCLINF0001: Activating Infinispan subsystem.
+2016-05-05 15:39:32,288 INFO  [org.jboss.as.clustering.jgroups] (ServerService Thread Pool -- 44) WFLYCLJG0001: Activating JGroups subsystem.
+2016-05-05 15:39:32,302 INFO  [org.jboss.as.connector] (MSC service thread 1-1) WFLYJCA0009: Starting JCA Subsystem (IronJacamar 1.2.5.Final)
+2016-05-05 15:39:32,322 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 50) WFLYNAM0001: Activating Naming Subsystem
+2016-05-05 15:39:32,331 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 58) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2016-05-05 15:39:32,324 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 47) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2016-05-05 15:39:32,349 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 57) WFLYSEC0002: Activating Security Subsystem
+2016-05-05 15:39:32,356 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0018: Started Driver service with driver-name = h2
+2016-05-05 15:39:32,472 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 60) WFLYWS0002: Activating WebServices Extension
+2016-05-05 15:39:32,479 INFO  [org.jboss.as.security] (MSC service thread 1-4) WFLYSEC0001: Current PicketBox version=4.9.2.Final
+2016-05-05 15:39:32,512 INFO  [org.jboss.as.naming] (MSC service thread 1-6) WFLYNAM0003: Starting Naming Service
+2016-05-05 15:39:32,514 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-7) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2016-05-05 15:39:32,517 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0003: Undertow 1.2.9.Final starting
+2016-05-05 15:39:32,519 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 59) WFLYUT0003: Undertow 1.2.9.Final starting
+2016-05-05 15:39:32,720 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 59) WFLYUT0014: Creating file handler for path /home/jurikolo/wf_cookbook/wildfly902/welcome-content
+2016-05-05 15:39:32,731 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0012: Started server default-server.
+2016-05-05 15:39:32,774 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested.
+2016-05-05 15:39:32,784 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0018: Host default-host starting
+2016-05-05 15:39:32,803 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-8) MSC000001: Failed to start service jboss.undertow.listener.ajp: org.jboss.msc.service.StartException in service jboss.undertow.listener.ajp: Could not start http listener
+	at org.wildfly.extension.undertow.ListenerService.start(ListenerService.java:150)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:437)
+	at sun.nio.ch.Net.bind(Net.java:429)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:67)
+	at org.xnio.nio.NioXnioWorker.createTcpConnectionServer(NioXnioWorker.java:182)
+	at org.xnio.XnioWorker.createStreamConnectionServer(XnioWorker.java:243)
+	at org.wildfly.extension.undertow.AjpListenerService.startListening(AjpListenerService.java:62)
+	at org.wildfly.extension.undertow.ListenerService.start(ListenerService.java:147)
+	... 5 more
+
+2016-05-05 15:39:32,803 ERROR [org.jboss.msc.service.fail] (MSC service thread 1-3) MSC000001: Failed to start service jboss.undertow.listener.default: org.jboss.msc.service.StartException in service jboss.undertow.listener.default: Could not start http listener
+	at org.wildfly.extension.undertow.ListenerService.start(ListenerService.java:150)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1948)
+	at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1881)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:437)
+	at sun.nio.ch.Net.bind(Net.java:429)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:67)
+	at org.xnio.nio.NioXnioWorker.createTcpConnectionServer(NioXnioWorker.java:182)
+	at org.xnio.XnioWorker.createStreamConnectionServer(XnioWorker.java:243)
+	at org.wildfly.extension.undertow.HttpListenerService.startListening(HttpListenerService.java:115)
+	at org.wildfly.extension.undertow.ListenerService.start(ListenerService.java:147)
+	... 5 more
+
+2016-05-05 15:39:32,807 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 62) MODCLUSTER000002: Initiating mod_cluster shutdown
+2016-05-05 15:39:32,809 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0019: Host default-host stopping
+2016-05-05 15:39:32,817 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2016-05-05 15:39:32,837 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0004: Undertow 1.2.9.Final stopping
+2016-05-05 15:39:32,974 ERROR [org.jboss.as.controller.management-operation] (ServerService Thread Pool -- 40) WFLYCTL0013: Operation ("add") failed - address: ([
+    ("subsystem" => "infinispan"),
+    ("cache-container" => "server"),
+    ("replicated-cache" => "default")
+]): java.lang.IllegalStateException: Container is down
+	at org.jboss.msc.service.ServiceContainerImpl.install(ServiceContainerImpl.java:716)
+	at org.jboss.msc.service.ServiceTargetImpl.install(ServiceTargetImpl.java:223)
+	at org.jboss.msc.service.ServiceControllerImpl$ChildServiceTarget.install(ServiceControllerImpl.java:2401)
+	at org.jboss.msc.service.ServiceTargetImpl.install(ServiceTargetImpl.java:223)
+	at org.jboss.msc.service.ServiceControllerImpl$ChildServiceTarget.install(ServiceControllerImpl.java:2401)
+	at org.jboss.msc.service.ServiceBuilderImpl.install(ServiceBuilderImpl.java:317)
+	at org.jboss.as.controller.OperationContextImpl$ContextServiceBuilder.install(OperationContextImpl.java:1931)
+	at org.jboss.as.clustering.infinispan.subsystem.CacheAddHandler.installRuntimeServices(CacheAddHandler.java:132)
+	at org.jboss.as.clustering.infinispan.subsystem.CacheAddHandler.performRuntime(CacheAddHandler.java:107)
+	at org.jboss.as.controller.AbstractAddStepHandler.performRuntime(AbstractAddStepHandler.java:276)
+	at org.jboss.as.controller.AbstractAddStepHandler$1.execute(AbstractAddStepHandler.java:128)
+	at org.jboss.as.controller.AbstractOperationContext.executeStep(AbstractOperationContext.java:803)
+	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:601)
+	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:354)
+	at org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:330)
+	at org.jboss.as.controller.ParallelBootOperationStepHandler$ParallelBootTask.run(ParallelBootOperationStepHandler.java:356)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:320)
+
+2016-05-05 15:39:32,979 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) "WFLYCTL0193: Failed executing subsystem infinispan boot operations"
+2016-05-05 15:39:32,980 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("parallel-subsystem-boot") failed - address: ([]) - failure description: "\"WFLYCTL0193: Failed executing subsystem infinispan boot operations\""
+2016-05-05 15:39:32,981 ERROR [org.jboss.as.controller.management-operation] (Controller Boot Thread) WFLYCTL0013: Operation ("boottime-controller-initializer-step") failed - address: ([]): java.lang.IllegalStateException: Container is down
+	at org.jboss.msc.service.ServiceContainerImpl.install(ServiceContainerImpl.java:716)
+	at org.jboss.msc.service.ServiceTargetImpl.install(ServiceTargetImpl.java:223)
+	at org.jboss.msc.service.ServiceControllerImpl$ChildServiceTarget.install(ServiceControllerImpl.java:2401)
+	at org.jboss.msc.service.ServiceTargetImpl.install(ServiceTargetImpl.java:223)
+	at org.jboss.msc.service.ServiceControllerImpl$ChildServiceTarget.install(ServiceControllerImpl.java:2401)
+	at org.jboss.msc.service.ServiceBuilderImpl.install(ServiceBuilderImpl.java:317)
+	at org.jboss.as.controller.OperationContextImpl$ContextServiceBuilder.install(OperationContextImpl.java:1931)
+	at org.jboss.as.jmx.model.ManagementModelIntegration.initializeStandalone(ManagementModelIntegration.java:51)
+	at org.jboss.as.controller.AbstractControllerService$ModelControllerServiceInitializationBootStepHandler$1.execute(AbstractControllerService.java:523)
+	at org.jboss.as.controller.AbstractOperationContext.executeStep(AbstractOperationContext.java:803)
+	at org.jboss.as.controller.AbstractOperationContext.doCompleteStep(AbstractOperationContext.java:601)
+	at org.jboss.as.controller.AbstractOperationContext.completeStepInternal(AbstractOperationContext.java:354)
+	at org.jboss.as.controller.AbstractOperationContext.executeOperation(AbstractOperationContext.java:330)
+	at org.jboss.as.controller.OperationContextImpl.executeOperation(OperationContextImpl.java:1183)
+	at org.jboss.as.controller.ModelControllerImpl.boot(ModelControllerImpl.java:453)
+	at org.jboss.as.controller.AbstractControllerService.boot(AbstractControllerService.java:327)
+	at org.jboss.as.controller.AbstractControllerService.boot(AbstractControllerService.java:313)
+	at org.jboss.as.server.ServerService.boot(ServerService.java:384)
+	at org.jboss.as.server.ServerService.boot(ServerService.java:359)
+	at org.jboss.as.controller.AbstractControllerService$1.run(AbstractControllerService.java:271)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-05-05 15:39:32,986 ERROR [org.jboss.as.server] (ServerService Thread Pool -- 36) WFLYSRV0022: Deploy of deployment "cluster-test.war" was rolled back with no failure message
+2016-05-05 15:39:32,987 ERROR [org.jboss.as.server] (ServerService Thread Pool -- 36) WFLYSRV0022: Deploy of deployment "example.war" was rolled back with no failure message
+2016-05-05 15:39:35,177 WARNING [org.jgroups.stack.Configurator] (MSC service thread 1-5) JGRP000014: Discovery.timeout has been deprecated: GMS.join_timeout should be used instead
+2016-05-05 15:39:35,178 WARNING [org.jgroups.stack.Configurator] (MSC service thread 1-5) JGRP000014: Discovery.num_initial_members has been deprecated: will be ignored
+2016-05-05 15:39:35,256 INFO  [stdout] (MSC service thread 1-5) 
+2016-05-05 15:39:35,256 INFO  [stdout] (MSC service thread 1-5) -------------------------------------------------------------------
+2016-05-05 15:39:35,256 INFO  [stdout] (MSC service thread 1-5) GMS: address=node-1, cluster=ee, physical address=127.0.0.1:7700
+2016-05-05 15:39:35,256 INFO  [stdout] (MSC service thread 1-5) -------------------------------------------------------------------
+2016-05-05 15:39:38,272 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 76) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-05-05 15:39:38,273 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 76) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-05-05 15:39:38,275 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 77) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-05-05 15:39:38,275 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (ServerService Thread Pool -- 76) ISPN000078: Starting JGroups channel web
+2016-05-05 15:39:38,276 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 77) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-05-05 15:39:38,278 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (ServerService Thread Pool -- 76) ISPN000094: Received new cluster view for channel web: [node-1|0] (1) [node-1]
+2016-05-05 15:39:38,278 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (ServerService Thread Pool -- 76) ISPN000079: Channel web local address is node-1, physical addresses are [127.0.0.1:7700]
+2016-05-05 15:39:38,299 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 77) WFLYCLINF0002: Started cluster-test.war cache from web container
+2016-05-05 15:39:38,306 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 76) WFLYCLINF0002: Started dist cache from web container
+2016-05-05 15:39:38,322 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 76) WFLYUT0021: Registered web context: /cluster-test
+2016-05-05 15:39:38,377 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0016: Replaced deployment "cluster-test.war" with deployment "cluster-test.war"
+2016-05-05 15:39:38,377 INFO  [org.jboss.as.server] (DeploymentScanner-threads - 2) WFLYSRV0016: Replaced deployment "example.war" with deployment "example.war"
+2016-05-05 15:40:32,912 INFO  [org.jboss.as] (MSC service thread 1-3) WFLYSRV0050: WildFly Full 9.0.2.Final (WildFly Core 1.0.2.Final) stopped in 60109ms
+2016-05-05 15:40:32,918 FATAL [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0056: Server boot has failed in an unrecoverable manner; exiting. See previous messages for details.
+2016-05-05 15:40:59,219 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (Incoming-2,ee,node-1) ISPN000094: Received new cluster view for channel web: [node-1|1] (2) [node-1, node-2]
+2016-05-05 15:41:00,058 INFO  [org.infinispan.CLUSTER] (remote-thread--p9-t2) ISPN000310: Starting cluster-wide rebalance for cache dist, topology CacheTopology{id=1, rebalanceId=1, currentCH=DefaultConsistentHash{ns=80, owners = (1)[node-1: 80+0]}, pendingCH=DefaultConsistentHash{ns=80, owners = (2)[node-1: 40+40, node-2: 40+40]}, unionCH=null, actualMembers=[node-1, node-2]}
+2016-05-05 15:41:00,058 INFO  [org.infinispan.CLUSTER] (remote-thread--p9-t1) ISPN000310: Starting cluster-wide rebalance for cache cluster-test.war, topology CacheTopology{id=1, rebalanceId=1, currentCH=DefaultConsistentHash{ns=80, owners = (1)[node-1: 80+0]}, pendingCH=DefaultConsistentHash{ns=80, owners = (2)[node-1: 40+40, node-2: 40+40]}, unionCH=null, actualMembers=[node-1, node-2]}
+2016-05-05 15:41:00,213 INFO  [org.infinispan.CLUSTER] (remote-thread--p9-t2) ISPN000336: Finished cluster-wide rebalance for cache cluster-test.war, topology id = 1
+2016-05-05 15:41:00,269 INFO  [org.infinispan.CLUSTER] (remote-thread--p9-t2) ISPN000336: Finished cluster-wide rebalance for cache dist, topology id = 1
+2016-05-05 15:42:19,541 INFO  [stdout] (default task-1) ********************************+
+2016-05-05 15:42:19,541 INFO  [stdout] (default task-1) Visitor(s): 0
+2016-05-05 15:42:19,541 INFO  [stdout] (default task-1) ********************************+
+2016-05-05 15:42:20,876 INFO  [stdout] (default task-2) ********************************+
+2016-05-05 15:42:20,876 INFO  [stdout] (default task-2) Visitor(s): 1
+2016-05-05 15:42:20,877 INFO  [stdout] (default task-2) ********************************+
+2016-05-05 15:42:21,363 INFO  [stdout] (default task-3) ********************************+
+2016-05-05 15:42:21,363 INFO  [stdout] (default task-3) Visitor(s): 2
+2016-05-05 15:42:21,364 INFO  [stdout] (default task-3) ********************************+
+2016-05-05 15:42:29,782 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested.
+2016-05-05 15:42:29,798 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 83) WFLYUT0022: Unregistered web context: /example
+2016-05-05 15:42:29,799 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 84) WFLYUT0022: Unregistered web context: /cluster-test
+2016-05-05 15:42:29,816 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0019: Host default-host stopping
+2016-05-05 15:42:29,817 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 83) MODCLUSTER000002: Initiating mod_cluster shutdown
+2016-05-05 15:42:29,818 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 82) ISPN000029: Passivating all entries to disk
+2016-05-05 15:42:29,827 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2016-05-05 15:42:29,839 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 82) ISPN000030: Passivated 2 entries in 21 milliseconds
+2016-05-05 15:42:29,839 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 86) ISPN000029: Passivating all entries to disk
+2016-05-05 15:42:29,840 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2016-05-05 15:42:29,854 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 86) ISPN000030: Passivated 1 entries in 14 milliseconds
+2016-05-05 15:42:29,861 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment example.war (runtime-name: example.war) in 75ms
+2016-05-05 15:42:29,864 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 86) WFLYCLINF0003: Stopped dist cache from web container
+2016-05-05 15:42:29,865 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 82) WFLYCLINF0003: Stopped cluster-test.war cache from web container
+2016-05-05 15:42:29,876 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-6) ISPN000080: Disconnecting JGroups channel web
+2016-05-05 15:42:29,877 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-6) ISPN000082: Stopping the RpcDispatcher for channel web
+2016-05-05 15:42:29,891 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow HTTP listener default suspending
+2016-05-05 15:42:29,891 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0008: Undertow AJP listener ajp suspending
+2016-05-05 15:42:29,892 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow HTTP listener default stopped, was bound to /127.0.0.1:8180
+2016-05-05 15:42:29,892 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0007: Undertow AJP listener ajp stopped, was bound to /127.0.0.1:8109
+2016-05-05 15:42:29,892 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-8) WFLYSRV0028: Stopped deployment cluster-test.war (runtime-name: cluster-test.war) in 106ms
+2016-05-05 15:42:29,893 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0004: Undertow 1.2.9.Final stopping
+2016-05-05 15:42:31,859 INFO  [org.jboss.as] (MSC service thread 1-8) WFLYSRV0050: WildFly Full 9.0.2.Final (WildFly Core 1.0.2.Final) stopped in 2071ms

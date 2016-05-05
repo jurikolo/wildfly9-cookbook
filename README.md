@@ -84,7 +84,7 @@ Wildfly9 directory
 -Dsoap.multicast.address=230.0.0.5
 ```
 You can verify verify result visiting http://localhost:8180/cluster-test ,
-http://localhost:8280/cluster-test/ , http://localhost:8380/cluster-test and
+http://localhost:8280/cluster-test , http://localhost:8380/cluster-test and
 http://localhost:8480/cluster-test . You should use different browsers for
 each cluster, in other case you will get amount of visitors = 0 due to cookie
 problems on a same host.
@@ -96,3 +96,27 @@ controllers to slave host.xml so it searches for a DC longer
 ./jboss-cli.sh --connect --command="deploy --force \
 /home/jurikolo/wf_cookbook/wildfly902/cluster-test.war"
 ```
+
+# Wildfly 9 standalone TCP cluster
+This example configures couple of Wildfly 9 standalone clusters via TCP as
+described in a book "Wildfly Cookbook", pages 215-223
+HOW TO
+------
+```bash```
+1. Copy directories cl-std-tcp-node-1 and cl-std-tcp-node-2 to the Wildfly9
+directory
+2. Run node-1:
+./bin/standalone.sh \
+-Djboss.server.base.dir=cl-std-tcp-node-1 \
+--server-config=standalone-ha.xml \
+-Djboss.socket.binding.port-offset=100 \
+-Djboss.node.name=node-1
+3. Run node-2:
+./bin/standalone.sh \
+-Djboss.server.base.dir=cl-std-tcp-node-2 \
+--server-config=standalone-ha.xml \
+-Djboss.socket.binding.port-offset=200 \
+-Djboss.node.name=node-2
+```
+You can verify verify result visiting http://localhost:8180/cluster-test and
+http://localhost:8280/cluster-test
