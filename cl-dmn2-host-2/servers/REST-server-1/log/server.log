@@ -1,0 +1,138 @@
+2016-05-05 14:32:39,414 INFO  [org.jboss.modules] (main) JBoss Modules version 1.4.3.Final
+2016-05-05 14:32:39,590 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2016-05-05 14:32:39,659 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0049: WildFly Full 9.0.2.Final (WildFly Core 1.0.2.Final) starting
+2016-05-05 14:32:39,660 DEBUG [org.jboss.as.config] (MSC service thread 1-6) Configured system properties:
+	[Server:REST-server-1] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/jurikolo/wf_cookbook/wildfly902/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /opt/oracle/jdk1.8.0_45x64/jre/lib/endorsed
+	java.ext.dirs = /opt/oracle/jdk1.8.0_45x64/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /opt/oracle/jdk1.8.0_45x64/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_45-b14
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_45
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.45-b02
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.domain.base.dir = /home/jurikolo/wf_cookbook/wildfly902/cl-dmn-host-1
+	jboss.domain.config.dir = /home/jurikolo/wf_cookbook/wildfly902/cl-dmn-host-1/configuration
+	jboss.domain.master.address = 127.0.0.1
+	jboss.home.dir = /home/jurikolo/wf_cookbook/wildfly902
+	jboss.host.name = t2007030
+	jboss.modules.dir = /home/jurikolo/wf_cookbook/wildfly902/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = host-1:REST-server-1
+	jboss.qualified.host.name = t2007030.tele2.net
+	jboss.server.base.dir = /home/jurikolo/wf_cookbook/wildfly902/cl-dmn-host-1/servers/REST-server-1
+	jboss.server.config.dir = /home/jurikolo/wf_cookbook/wildfly902/cl-dmn-host-1/servers/REST-server-1/configuration
+	jboss.server.data.dir = /home/jurikolo/wf_cookbook/wildfly902/cl-dmn-host-1/servers/REST-server-1/data
+	jboss.server.deploy.dir = /home/jurikolo/wf_cookbook/wildfly902/cl-dmn-host-1/servers/REST-server-1/data/content
+	jboss.server.log.dir = /home/jurikolo/wf_cookbook/wildfly902/cl-dmn-host-1/servers/REST-server-1/log
+	jboss.server.name = REST-server-1
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/jurikolo/wf_cookbook/wildfly902/cl-dmn-host-1/servers/REST-server-1/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/jurikolo/wf_cookbook/wildfly902/cl-dmn-host-1/servers/REST-server-1/data/logging.properties
+	module.path = /home/jurikolo/wf_cookbook/wildfly902/modules
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 4.4.8-300.fc23.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /opt/oracle/jdk1.8.0_45x64/jre/lib/resources.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/rt.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/sunrsasign.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/jsse.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/jce.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/charsets.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/jfr.jar:/opt/oracle/jdk1.8.0_45x64/jre/classes
+	sun.boot.library.path = /opt/oracle/jdk1.8.0_45x64/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.desktop = gnome
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /home/jurikolo/wf_cookbook/wildfly902/jboss-modules.jar -mp /home/jurikolo/wf_cookbook/wildfly902/modules org.jboss.as.server
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /home/jurikolo/wf_cookbook/wildfly902
+	user.home = /home/jurikolo
+	user.language = en
+	user.name = jurikolo
+	user.timezone = Europe/Riga
+2016-05-05 14:32:39,661 DEBUG [org.jboss.as.config] (MSC service thread 1-6) VM Arguments: -D[Server:REST-server-1] -Xms384m -Xmx384m -Djava.awt.headless=true -Djava.net.preferIPv4Stack=true -Djboss.domain.base.dir=cl-dmn-host-1 -Djboss.domain.master.address=127.0.0.1 -Djboss.home.dir=/home/jurikolo/wf_cookbook/wildfly902 -Djboss.modules.system.pkgs=org.jboss.byteman -Djboss.server.log.dir=/home/jurikolo/wf_cookbook/wildfly902/cl-dmn-host-1/servers/REST-server-1/log -Djboss.server.temp.dir=/home/jurikolo/wf_cookbook/wildfly902/cl-dmn-host-1/servers/REST-server-1/tmp -Djboss.server.data.dir=/home/jurikolo/wf_cookbook/wildfly902/cl-dmn-host-1/servers/REST-server-1/data -Dlogging.configuration=file:/home/jurikolo/wf_cookbook/wildfly902/cl-dmn-host-1/servers/REST-server-1/data/logging.properties 
+2016-05-05 14:32:39,712 INFO  [org.xnio] (MSC service thread 1-6) XNIO version 3.3.1.Final
+2016-05-05 14:32:39,721 INFO  [org.xnio.nio] (MSC service thread 1-6) XNIO NIO Implementation Version 3.3.1.Final
+2016-05-05 14:32:39,740 INFO  [org.jboss.remoting] (MSC service thread 1-6) JBoss Remoting version 4.0.9.Final
+2016-05-05 14:33:40,029 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested.
+2016-05-05 14:33:40,029 ERROR [org.jboss.msc.service.fail] (ServerService Thread Pool -- 2) MSC000001: Failed to start service jboss.server-boot-operations: org.jboss.msc.service.StartException in service jboss.server-boot-operations: java.net.ConnectException: WFLYPRT0023: Could not connect to remote://127.0.0.1:19999. The connection timed out
+	at org.jboss.as.server.mgmt.domain.ServerBootOperationsService$1.run(ServerBootOperationsService.java:72)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:320)
+Caused by: java.net.ConnectException: WFLYPRT0023: Could not connect to remote://127.0.0.1:19999. The connection timed out
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:124)
+	at org.jboss.as.protocol.ProtocolConnectionManager$EstablishingConnection.connect(ProtocolConnectionManager.java:257)
+	at org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:71)
+	at org.jboss.as.server.mgmt.domain.HostControllerConnection.openConnection(HostControllerConnection.java:130)
+	at org.jboss.as.server.mgmt.domain.HostControllerClient.resolveBootUpdates(HostControllerClient.java:85)
+	at org.jboss.as.server.mgmt.domain.ServerBootOperationsService$1.run(ServerBootOperationsService.java:68)
+	... 4 more
+
+2016-05-05 14:33:40,029 ERROR [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0055: Caught exception during boot: org.jboss.as.controller.persistence.ConfigurationPersistenceException: java.util.concurrent.ExecutionException: Operation failed
+	at org.jboss.as.server.ServerStartTask$2$1.load(ServerStartTask.java:185)
+	at org.jboss.as.server.ServerService.boot(ServerService.java:350)
+	at org.jboss.as.controller.AbstractControllerService$1.run(AbstractControllerService.java:271)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.util.concurrent.ExecutionException: Operation failed
+	at org.jboss.threads.AsyncFutureTask.operationFailed(AsyncFutureTask.java:74)
+	at org.jboss.threads.AsyncFutureTask.get(AsyncFutureTask.java:268)
+	at org.jboss.as.server.mgmt.domain.ServerBootOperationsService$2.get(ServerBootOperationsService.java:113)
+	at org.jboss.as.server.mgmt.domain.ServerBootOperationsService$2.get(ServerBootOperationsService.java:95)
+	at org.jboss.as.server.ServerStartTask$2$1.load(ServerStartTask.java:182)
+	... 3 more
+Caused by: java.net.ConnectException: WFLYPRT0023: Could not connect to remote://127.0.0.1:19999. The connection timed out
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:124)
+	at org.jboss.as.protocol.ProtocolConnectionManager$EstablishingConnection.connect(ProtocolConnectionManager.java:257)
+	at org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:71)
+	at org.jboss.as.server.mgmt.domain.HostControllerConnection.openConnection(HostControllerConnection.java:130)
+	at org.jboss.as.server.mgmt.domain.HostControllerClient.resolveBootUpdates(HostControllerClient.java:85)
+	at org.jboss.as.server.mgmt.domain.ServerBootOperationsService$1.run(ServerBootOperationsService.java:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+	at org.jboss.threads.JBossThread.run(JBossThread.java:320)
+
+2016-05-05 14:33:40,035 FATAL [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0056: Server boot has failed in an unrecoverable manner; exiting. See previous messages for details.
+2016-05-05 14:33:40,048 INFO  [org.jboss.as] (MSC service thread 1-1) WFLYSRV0050: WildFly Full 9.0.2.Final (WildFly Core 1.0.2.Final) stopped in 10ms

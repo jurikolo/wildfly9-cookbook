@@ -1,0 +1,6 @@
+2016-05-05 14:54:51,605 INFO  [org.jboss.modules] (main) JBoss Modules version 1.4.3.Final
+2016-05-05 14:54:51,740 INFO  [org.jboss.as.process.Host Controller.status] (main) WFLYPC0018: Starting process 'Host Controller'
+2016-05-05 15:05:01,112 INFO  [org.jboss.as.process] (Shutdown thread) WFLYPC0017: Shutting down process controller
+2016-05-05 15:05:01,113 INFO  [org.jboss.as.process.Host Controller.status] (Shutdown thread) WFLYPC0019: Stopping process 'Host Controller'
+2016-05-05 15:05:01,143 INFO  [org.jboss.as.process.Host Controller.status] (reaper for Host Controller) WFLYPC0011: Process 'Host Controller' finished with an exit status of 130
+2016-05-05 15:05:01,144 INFO  [org.jboss.as.process] (Shutdown thread) WFLYPC0016: All processes finished; exiting

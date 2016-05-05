@@ -1,0 +1,35 @@
+2016-05-05 14:55:41,776 INFO  [org.jboss.modules] (main) JBoss Modules version 1.4.3.Final
+2016-05-05 14:55:41,956 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2016-05-05 14:55:41,992 INFO  [org.jboss.as] (MSC service thread 1-6) WFLYSRV0049: WildFly Full 9.0.2.Final (WildFly Core 1.0.2.Final) starting
+2016-05-05 14:55:42,532 INFO  [org.jboss.as.host.controller] (Controller Boot Thread) WFLYHC0003: Creating http management service using network interface (management) port (29990) securePort (-1)
+2016-05-05 14:55:42,533 INFO  [org.xnio] (MSC service thread 1-2) XNIO version 3.3.1.Final
+2016-05-05 14:55:42,545 INFO  [org.xnio.nio] (MSC service thread 1-2) XNIO NIO Implementation Version 3.3.1.Final
+2016-05-05 14:55:42,650 INFO  [org.jboss.remoting] (MSC service thread 1-2) JBoss Remoting version 4.0.9.Final
+2016-05-05 14:55:42,694 INFO  [org.jboss.as.remoting] (MSC service thread 1-4) WFLYRMT0001: Listening on 127.0.0.1:29999
+2016-05-05 14:55:47,943 WARN  [org.jboss.as.host.controller] (Controller Boot Thread) WFLYHC0001: Could not connect to remote domain controller remote://127.0.0.1:9999 -- java.net.ConnectException: WFLYPRT0023: Could not connect to remote://127.0.0.1:9999. The connection timed out
+2016-05-05 14:55:53,944 WARN  [org.jboss.as.host.controller] (Controller Boot Thread) WFLYHC0001: Could not connect to remote domain controller remote://127.0.0.1:9999 -- java.net.ConnectException: WFLYPRT0023: Could not connect to remote://127.0.0.1:9999. The connection timed out
+2016-05-05 14:55:59,946 WARN  [org.jboss.as.host.controller] (Controller Boot Thread) WFLYHC0001: Could not connect to remote domain controller remote://127.0.0.1:9999 -- java.net.ConnectException: WFLYPRT0023: Could not connect to remote://127.0.0.1:9999. The connection timed out
+2016-05-05 14:56:05,947 WARN  [org.jboss.as.host.controller] (Controller Boot Thread) WFLYHC0001: Could not connect to remote domain controller remote://127.0.0.1:9999 -- java.net.ConnectException: WFLYPRT0023: Could not connect to remote://127.0.0.1:9999. The connection timed out
+2016-05-05 14:56:11,949 WARN  [org.jboss.as.host.controller] (Controller Boot Thread) WFLYHC0001: Could not connect to remote domain controller remote://127.0.0.1:9999 -- java.net.ConnectException: WFLYPRT0023: Could not connect to remote://127.0.0.1:9999. The connection timed out
+2016-05-05 14:56:17,950 WARN  [org.jboss.as.host.controller] (Controller Boot Thread) WFLYHC0001: Could not connect to remote domain controller remote://127.0.0.1:9999 -- java.net.ConnectException: WFLYPRT0023: Could not connect to remote://127.0.0.1:9999. The connection timed out
+2016-05-05 14:56:17,951 WARN  [org.jboss.as.host.controller] (Controller Boot Thread) WFLYHC0001: Could not connect to remote domain controller remote://127.0.0.1:9999 -- java.lang.IllegalStateException: WFLYHC0052: Could not connect to master in 5 attempts within 30000 ms
+2016-05-05 14:56:22,952 WARN  [org.jboss.as.host.controller] (Controller Boot Thread) WFLYHC0001: Could not connect to remote domain controller remote://127.0.0.1:9999 -- java.net.ConnectException: WFLYPRT0023: Could not connect to remote://127.0.0.1:9999. The connection timed out
+2016-05-05 14:56:28,953 WARN  [org.jboss.as.host.controller] (Controller Boot Thread) WFLYHC0001: Could not connect to remote domain controller remote://127.0.0.1:9999 -- java.net.ConnectException: WFLYPRT0023: Could not connect to remote://127.0.0.1:9999. The connection timed out
+2016-05-05 14:56:35,425 INFO  [org.jboss.as.host.controller] (Controller Boot Thread) WFLYHC0148: Connected to master host controller at remote://127.0.0.1:9999
+2016-05-05 14:56:35,512 INFO  [org.jboss.as.host.controller] (Controller Boot Thread) WFLYHC0023: Starting server REST-server-2
+2016-05-05 14:57:27,403 INFO  [org.jboss.as.host.controller] (Remoting "host-2:MANAGEMENT" task-4) WFLYHC0021: Server [Server:REST-server-2] connected using connection [Channel ID 49f374bc (inbound) of Remoting connection 0e709db2 to /127.0.0.1:57949]
+2016-05-05 14:57:27,449 INFO  [org.jboss.as.host.controller] (Controller Boot Thread) WFLYHC0023: Starting server SOAP-server-2
+2016-05-05 14:57:27,474 INFO  [org.jboss.as.host.controller] (server-registration-threads - 1) WFLYHC0020: Registering server REST-server-2
+2016-05-05 14:58:20,687 INFO  [org.jboss.as.host.controller] (Remoting "host-2:MANAGEMENT" task-10) WFLYHC0021: Server [Server:SOAP-server-2] connected using connection [Channel ID 41f52c45 (inbound) of Remoting connection 523b8cbc to /127.0.0.1:47279]
+2016-05-05 14:58:20,733 INFO  [org.jboss.as.host.controller] (server-registration-threads - 1) WFLYHC0020: Registering server SOAP-server-2
+2016-05-05 14:58:20,737 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0060: Http management interface listening on http://127.0.0.1:29990/management
+2016-05-05 14:58:20,738 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0051: Admin console listening on http://127.0.0.1:29990
+2016-05-05 14:58:20,738 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 9.0.2.Final (WildFly Core 1.0.2.Final) (Host Controller) started in 159287ms - Started 48 of 50 services (15 services are lazy, passive or on-demand)
+2016-05-05 15:04:57,998 INFO  [org.jboss.as.host.controller] (Remoting "host-2:MANAGEMENT" task-9) WFLYHC0029: Unregistered at domain controller
+2016-05-05 15:04:58,013 INFO  [org.jboss.as.host.controller] (Host Controller Service Threads - 12) WFLYHC0024: Stopping server REST-server-2
+2016-05-05 15:04:58,170 INFO  [org.jboss.as.host.controller] (Host Controller Service Threads - 12) WFLYHC0024: Stopping server SOAP-server-2
+2016-05-05 15:04:58,297 INFO  [org.jboss.as.host.controller] (Remoting "host-2:MANAGEMENT" task-2) WFLYHC0027: Unregistering server SOAP-server-2
+2016-05-05 15:04:58,314 INFO  [org.jboss.as.host.controller] (Remoting "host-2:MANAGEMENT" task-4) WFLYHC0027: Unregistering server REST-server-2
+2016-05-05 15:04:58,412 INFO  [org.jboss.as.host.controller] (ProcessControllerConnection-thread - 2) WFLYHC0027: Unregistering server SOAP-server-2
+2016-05-05 15:04:58,412 INFO  [org.jboss.as.host.controller] (ProcessControllerConnection-thread - 2) WFLYHC0027: Unregistering server REST-server-2
+2016-05-05 15:04:58,465 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0050: WildFly Full 9.0.2.Final (WildFly Core 1.0.2.Final) stopped in 527ms

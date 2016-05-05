@@ -1,0 +1,12 @@
+2016-05-05 14:55:41,200 INFO  [org.jboss.modules] (main) JBoss Modules version 1.4.3.Final
+2016-05-05 14:55:41,324 INFO  [org.jboss.as.process.Host Controller.status] (main) WFLYPC0018: Starting process 'Host Controller'
+2016-05-05 14:56:35,563 INFO  [org.jboss.as.process.Server:REST-server-2.status] (ProcessController-threads - 3) WFLYPC0018: Starting process 'Server:REST-server-2'
+2016-05-05 14:57:27,490 INFO  [org.jboss.as.process.Server:SOAP-server-2.status] (ProcessController-threads - 3) WFLYPC0018: Starting process 'Server:SOAP-server-2'
+2016-05-05 15:04:57,920 INFO  [org.jboss.as.process] (Shutdown thread) WFLYPC0017: Shutting down process controller
+2016-05-05 15:04:57,921 INFO  [org.jboss.as.process.Host Controller.status] (Shutdown thread) WFLYPC0019: Stopping process 'Host Controller'
+2016-05-05 15:04:58,198 INFO  [org.jboss.as.process.Server:REST-server-2.status] (ProcessController-threads - 4) WFLYPC0019: Stopping process 'Server:REST-server-2'
+2016-05-05 15:04:58,236 INFO  [org.jboss.as.process.Server:SOAP-server-2.status] (ProcessController-threads - 4) WFLYPC0019: Stopping process 'Server:SOAP-server-2'
+2016-05-05 15:04:58,371 INFO  [org.jboss.as.process.Server:SOAP-server-2.status] (reaper for Server:SOAP-server-2) WFLYPC0011: Process 'Server:SOAP-server-2' finished with an exit status of 130
+2016-05-05 15:04:58,371 INFO  [org.jboss.as.process.Server:REST-server-2.status] (reaper for Server:REST-server-2) WFLYPC0011: Process 'Server:REST-server-2' finished with an exit status of 130
+2016-05-05 15:04:58,479 INFO  [org.jboss.as.process.Host Controller.status] (reaper for Host Controller) WFLYPC0011: Process 'Host Controller' finished with an exit status of 130
+2016-05-05 15:04:58,480 INFO  [org.jboss.as.process] (Shutdown thread) WFLYPC0016: All processes finished; exiting

@@ -1,0 +1,436 @@
+2016-05-05 14:46:19,235 INFO  [org.jboss.modules] (main) JBoss Modules version 1.4.3.Final
+2016-05-05 14:46:19,718 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2016-05-05 14:46:19,832 INFO  [org.jboss.as] (MSC service thread 1-8) WFLYSRV0049: WildFly Full 9.0.2.Final (WildFly Core 1.0.2.Final) starting
+2016-05-05 14:46:19,835 DEBUG [org.jboss.as.config] (MSC service thread 1-8) Configured system properties:
+	[Server:SOAP-server-1] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/jurikolo/wf_cookbook/wildfly902/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /opt/oracle/jdk1.8.0_45x64/jre/lib/endorsed
+	java.ext.dirs = /opt/oracle/jdk1.8.0_45x64/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /opt/oracle/jdk1.8.0_45x64/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_45-b14
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_45
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.45-b02
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.domain.base.dir = /home/jurikolo/wf_cookbook/wildfly902/cl-dmn2-host-1
+	jboss.domain.config.dir = /home/jurikolo/wf_cookbook/wildfly902/cl-dmn2-host-1/configuration
+	jboss.domain.master.address = 127.0.0.1
+	jboss.home.dir = /home/jurikolo/wf_cookbook/wildfly902
+	jboss.host.name = t2007030
+	jboss.modules.dir = /home/jurikolo/wf_cookbook/wildfly902/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = host-1:SOAP-server-1
+	jboss.qualified.host.name = t2007030.tele2.net
+	jboss.server.base.dir = /home/jurikolo/wf_cookbook/wildfly902/cl-dmn2-host-1/servers/SOAP-server-1
+	jboss.server.config.dir = /home/jurikolo/wf_cookbook/wildfly902/cl-dmn2-host-1/servers/SOAP-server-1/configuration
+	jboss.server.data.dir = /home/jurikolo/wf_cookbook/wildfly902/cl-dmn2-host-1/servers/SOAP-server-1/data
+	jboss.server.deploy.dir = /home/jurikolo/wf_cookbook/wildfly902/cl-dmn2-host-1/servers/SOAP-server-1/data/content
+	jboss.server.log.dir = /home/jurikolo/wf_cookbook/wildfly902/cl-dmn2-host-1/servers/SOAP-server-1/log
+	jboss.server.name = SOAP-server-1
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/jurikolo/wf_cookbook/wildfly902/cl-dmn2-host-1/servers/SOAP-server-1/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/jurikolo/wf_cookbook/wildfly902/cl-dmn2-host-1/configuration/default-server-logging.properties
+	module.path = /home/jurikolo/wf_cookbook/wildfly902/modules
+	org.jboss.boot.log.file = /home/jurikolo/wf_cookbook/wildfly902/cl-dmn2-host-1/servers/SOAP-server-1/log/server.log
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 4.4.8-300.fc23.x86_64
+	path.separator = :
+	sun.arch.data.model = 64
+	sun.boot.class.path = /opt/oracle/jdk1.8.0_45x64/jre/lib/resources.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/rt.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/sunrsasign.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/jsse.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/jce.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/charsets.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/jfr.jar:/opt/oracle/jdk1.8.0_45x64/jre/classes
+	sun.boot.library.path = /opt/oracle/jdk1.8.0_45x64/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.desktop = gnome
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /home/jurikolo/wf_cookbook/wildfly902/jboss-modules.jar -mp /home/jurikolo/wf_cookbook/wildfly902/modules org.jboss.as.server
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /home/jurikolo/wf_cookbook/wildfly902
+	user.home = /home/jurikolo
+	user.language = en
+	user.name = jurikolo
+	user.timezone = Europe/Riga
+2016-05-05 14:46:19,836 DEBUG [org.jboss.as.config] (MSC service thread 1-8) VM Arguments: -D[Server:SOAP-server-1] -Xms384m -Xmx384m -Djava.awt.headless=true -Djava.net.preferIPv4Stack=true -Djboss.domain.base.dir=cl-dmn2-host-1 -Djboss.domain.master.address=127.0.0.1 -Djboss.home.dir=/home/jurikolo/wf_cookbook/wildfly902 -Djboss.modules.system.pkgs=org.jboss.byteman -Djboss.server.log.dir=/home/jurikolo/wf_cookbook/wildfly902/cl-dmn2-host-1/servers/SOAP-server-1/log -Djboss.server.temp.dir=/home/jurikolo/wf_cookbook/wildfly902/cl-dmn2-host-1/servers/SOAP-server-1/tmp -Djboss.server.data.dir=/home/jurikolo/wf_cookbook/wildfly902/cl-dmn2-host-1/servers/SOAP-server-1/data -Dorg.jboss.boot.log.file=/home/jurikolo/wf_cookbook/wildfly902/cl-dmn2-host-1/servers/SOAP-server-1/log/server.log -Dlogging.configuration=file:/home/jurikolo/wf_cookbook/wildfly902/cl-dmn2-host-1/configuration/default-server-logging.properties 
+2016-05-05 14:46:19,919 INFO  [org.xnio] (MSC service thread 1-5) XNIO version 3.3.1.Final
+2016-05-05 14:46:19,935 INFO  [org.xnio.nio] (MSC service thread 1-5) XNIO NIO Implementation Version 3.3.1.Final
+2016-05-05 14:46:19,981 INFO  [org.jboss.remoting] (MSC service thread 1-5) JBoss Remoting version 4.0.9.Final
+2016-05-05 14:47:12,849 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 29) WFLYCTL0028: Attribute 'job-repository-type' in the resource at address '/subsystem=batch' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2016-05-05 14:47:12,857 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 16) WFLYCTL0028: Attribute 'default-stack' in the resource at address '/subsystem=jgroups' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2016-05-05 14:47:12,868 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 22) WFLYCTL0028: Attribute 'enabled' in the resource at address '/subsystem=datasources/data-source=ExampleDS' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2016-05-05 14:47:13,253 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 37) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2016-05-05 14:47:13,253 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 39) WFLYSEC0002: Activating Security Subsystem
+2016-05-05 14:47:13,291 INFO  [org.jboss.as.security] (MSC service thread 1-3) WFLYSEC0001: Current PicketBox version=4.9.2.Final
+2016-05-05 14:47:13,306 INFO  [org.jboss.as.clustering.jgroups] (ServerService Thread Pool -- 51) WFLYCLJG0001: Activating JGroups subsystem.
+2016-05-05 14:47:13,327 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 45) WFLYNAM0001: Activating Naming Subsystem
+2016-05-05 14:47:13,329 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 35) WFLYWS0002: Activating WebServices Extension
+2016-05-05 14:47:13,334 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 55) WFLYCLINF0001: Activating Infinispan subsystem.
+2016-05-05 14:47:13,359 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 59) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2016-05-05 14:47:13,363 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 48) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2016-05-05 14:47:13,367 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 56) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2016-05-05 14:47:13,398 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0003: Undertow 1.2.9.Final starting
+2016-05-05 14:47:13,394 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 36) WFLYUT0003: Undertow 1.2.9.Final starting
+2016-05-05 14:47:13,474 INFO  [org.jboss.as.naming] (MSC service thread 1-5) WFLYNAM0003: Starting Naming Service
+2016-05-05 14:47:13,502 INFO  [org.jboss.as.connector] (MSC service thread 1-2) WFLYJCA0009: Starting JCA Subsystem (IronJacamar 1.2.5.Final)
+2016-05-05 14:47:13,515 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-8) WFLYJCA0018: Started Driver service with driver-name = h2
+2016-05-05 14:47:13,533 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-3) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2016-05-05 14:47:13,691 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 36) WFLYUT0014: Creating file handler for path /home/jurikolo/wf_cookbook/wildfly902/welcome-content
+2016-05-05 14:47:13,940 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0012: Started server default-server.
+2016-05-05 14:47:13,958 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0018: Host default-host starting
+2016-05-05 14:47:14,025 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-3) WFLYUT0006: Undertow AJP listener ajp listening on /127.0.0.1:8209
+2016-05-05 14:47:14,034 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0006: Undertow HTTP listener default listening on /127.0.0.1:8280
+2016-05-05 14:47:14,045 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 62) MODCLUSTER000001: Initializing mod_cluster version 1.3.1.Final
+2016-05-05 14:47:14,065 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 62) MODCLUSTER000032: Listening to proxy advertisements on /224.0.1.105:23364
+2016-05-05 14:47:14,398 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "cluster-test.war" (runtime-name: "cluster-test.war")
+2016-05-05 14:47:14,440 INFO  [org.jboss.ws.common.management] (MSC service thread 1-7) JBWS022052: Starting JBoss Web Services - Stack CXF Server 5.0.0.Final
+2016-05-05 14:47:15,101 WARNING [org.jgroups.protocols.UDP] (MSC service thread 1-5) JGRP000015: the send buffer of socket DatagramSocket was set to 640KB, but the OS only allocated 212.99KB. This might lead to performance problems. Please set your max send buffer in the OS correctly (e.g. net.core.wmem_max on Linux)
+2016-05-05 14:47:15,101 WARNING [org.jgroups.protocols.UDP] (MSC service thread 1-5) JGRP000015: the receive buffer of socket DatagramSocket was set to 20MB, but the OS only allocated 212.99KB. This might lead to performance problems. Please set your max receive buffer in the OS correctly (e.g. net.core.rmem_max on Linux)
+2016-05-05 14:47:15,102 WARNING [org.jgroups.protocols.UDP] (MSC service thread 1-5) JGRP000015: the send buffer of socket MulticastSocket was set to 640KB, but the OS only allocated 212.99KB. This might lead to performance problems. Please set your max send buffer in the OS correctly (e.g. net.core.wmem_max on Linux)
+2016-05-05 14:47:15,102 WARNING [org.jgroups.protocols.UDP] (MSC service thread 1-5) JGRP000015: the receive buffer of socket MulticastSocket was set to 25MB, but the OS only allocated 212.99KB. This might lead to performance problems. Please set your max receive buffer in the OS correctly (e.g. net.core.rmem_max on Linux)
+2016-05-05 14:47:15,106 INFO  [stdout] (MSC service thread 1-5) 
+2016-05-05 14:47:15,106 INFO  [stdout] (MSC service thread 1-5) -------------------------------------------------------------------
+2016-05-05 14:47:15,106 INFO  [stdout] (MSC service thread 1-5) GMS: address=host-1:SOAP-server-1, cluster=ee, physical address=127.0.0.1:55400
+2016-05-05 14:47:15,107 INFO  [stdout] (MSC service thread 1-5) -------------------------------------------------------------------
+2016-05-05 14:47:15,396 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 62) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-05-05 14:47:15,401 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 62) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-05-05 14:47:15,412 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 64) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-05-05 14:47:15,413 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 64) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-05-05 14:47:15,789 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (ServerService Thread Pool -- 63) ISPN000078: Starting JGroups channel web
+2016-05-05 14:47:15,806 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (ServerService Thread Pool -- 63) ISPN000094: Received new cluster view for channel web: [host-1:REST-server-1|2] (3) [host-1:REST-server-1, host-2:REST-server-2, host-1:SOAP-server-1]
+2016-05-05 14:47:15,818 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (ServerService Thread Pool -- 63) ISPN000079: Channel web local address is host-1:SOAP-server-1, physical addresses are [127.0.0.1:55400]
+2016-05-05 14:47:15,863 INFO  [org.infinispan.factories.GlobalComponentRegistry] (ServerService Thread Pool -- 63) ISPN000128: Infinispan version: Infinispan 'Insanely Bad Elf' 7.2.3.Final
+2016-05-05 14:47:16,375 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 62) WFLYCLINF0002: Started cluster-test.war cache from web container
+2016-05-05 14:47:16,408 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 63) WFLYCLINF0002: Started dist cache from web container
+2016-05-05 14:47:21,458 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (Incoming-4,ee,host-1:SOAP-server-1) ISPN000094: Received new cluster view for channel web: [host-1:REST-server-1|3] (4) [host-1:REST-server-1, host-2:REST-server-2, host-1:SOAP-server-1, host-2:SOAP-server-2]
+2016-05-05 14:48:04,169 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2016-05-05 14:48:04,523 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 68) WFLYUT0021: Registered web context: /cluster-test
+2016-05-05 14:48:04,623 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "cluster-test.war" (runtime-name : "cluster-test.war")
+2016-05-05 14:48:04,809 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 9.0.2.Final (WildFly Core 1.0.2.Final) started in 106423ms - Started 327 of 508 services (281 services are lazy, passive or on-demand)
+2016-05-05 14:50:18,840 INFO  [stdout] (default task-1) ********************************+
+2016-05-05 14:50:18,840 INFO  [stdout] (default task-1) Visitor(s): 1
+2016-05-05 14:50:18,840 INFO  [stdout] (default task-1) ********************************+
+2016-05-05 14:50:42,055 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (Incoming-5,ee,host-1:SOAP-server-1) ISPN000094: Received new cluster view for channel web: [host-1:REST-server-1|4] (3) [host-1:REST-server-1, host-1:SOAP-server-1, host-2:SOAP-server-2]
+2016-05-05 14:50:42,065 WARN  [org.infinispan.statetransfer.InboundTransferTask] (stateTransferExecutor-thread--p5-t26) ISPN000210: Failed to request segments [74, 61, 78] of cache cluster-test.war from node host-2:SOAP-server-2 (node will not be retried): org.infinispan.commons.CacheException: CacheNotFoundResponse
+	at org.infinispan.statetransfer.InboundTransferTask.requestSegments(InboundTransferTask.java:150)
+	at org.infinispan.statetransfer.StateConsumerImpl$7.call(StateConsumerImpl.java:1045)
+	at org.infinispan.statetransfer.StateConsumerImpl$7.call(StateConsumerImpl.java:1042)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.infinispan.executors.SemaphoreCompletionService$QueueingTask.runInternal(SemaphoreCompletionService.java:173)
+	at org.infinispan.executors.SemaphoreCompletionService$QueueingTask.run(SemaphoreCompletionService.java:151)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-05-05 14:50:42,233 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested.
+2016-05-05 14:50:42,406 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 73) WFLYUT0022: Unregistered web context: /cluster-test
+2016-05-05 14:50:42,502 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-7) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2016-05-05 14:50:42,510 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-6) WFLYUT0019: Host default-host stopping
+2016-05-05 14:50:42,536 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-6) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2016-05-05 14:50:42,578 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (Incoming-6,ee,host-1:SOAP-server-1) ISPN000094: Received new cluster view for channel web: [host-1:REST-server-1|5] (2) [host-1:REST-server-1, host-1:SOAP-server-1]
+2016-05-05 14:50:42,541 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 77) ISPN000029: Passivating all entries to disk
+2016-05-05 14:50:42,568 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 0 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,663 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 2 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,664 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 4 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,664 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 6 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,674 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 8 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,674 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 10 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,675 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 11 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,675 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 12 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,675 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 17 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,677 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 18 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,678 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 19 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,678 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 21 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,678 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 23 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,678 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 25 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,681 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 40 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,682 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 42 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,683 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 44 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,684 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 46 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,685 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 48 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,685 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 50 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,686 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 52 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,687 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 53 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,692 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 56 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,699 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 57 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,727 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 58 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,705 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 78) ISPN000029: Passivating all entries to disk
+2016-05-05 14:50:42,655 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 75) MODCLUSTER000002: Initiating mod_cluster shutdown
+2016-05-05 14:50:42,738 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 78) ISPN000030: Passivated 0 entries in 32 milliseconds
+2016-05-05 14:50:42,734 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 59 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,732 WARN  [org.infinispan.statetransfer.InboundTransferTask] (stateTransferExecutor-thread--p5-t30) ISPN000210: Failed to request segments [0, 2, 4, 6, 8, 10, 11, 12, 17, 18, 19, 21, 23, 25, 40, 42, 44, 46, 48, 50, 52, 53, 56, 57, 58, 59] of cache dist from node host-1:REST-server-1 (node will not be retried): org.infinispan.commons.CacheException: CacheNotFoundResponse
+	at org.infinispan.statetransfer.InboundTransferTask.requestSegments(InboundTransferTask.java:150)
+	at org.infinispan.statetransfer.StateConsumerImpl$7.call(StateConsumerImpl.java:1045)
+	at org.infinispan.statetransfer.StateConsumerImpl$7.call(StateConsumerImpl.java:1042)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.infinispan.executors.SemaphoreCompletionService$QueueingTask.runInternal(SemaphoreCompletionService.java:173)
+	at org.infinispan.executors.SemaphoreCompletionService$QueueingTask.run(SemaphoreCompletionService.java:151)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016-05-05 14:50:42,752 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 0 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,752 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 2 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,753 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 4 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,753 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 6 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,753 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 8 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,755 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 10 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,756 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 11 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,756 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 12 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,758 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 17 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,759 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 18 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,759 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 19 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,759 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 21 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,759 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 23 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,760 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 25 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,773 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 40 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,775 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 42 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,777 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 44 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,777 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 46 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,778 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 48 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,778 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 50 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,780 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 52 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,781 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 53 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,782 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 56 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,785 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 77) ISPN000030: Passivated 1 entries in 244 milliseconds
+2016-05-05 14:50:42,800 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 57 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,807 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 58 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,808 ERROR [org.infinispan.statetransfer.StateConsumerImpl] (transport-thread--p2-t23) ISPN000208: No live owners found for segment 59 of cache cluster-test.war. Current owners are:  [host-1:REST-server-1]. Faulty owners: [host-1:REST-server-1]
+2016-05-05 14:50:42,830 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 77) WFLYCLINF0003: Stopped cluster-test.war cache from web container
+2016-05-05 14:50:42,872 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-3) HV000001: Hibernate Validator 5.1.3.Final
+2016-05-05 14:50:42,948 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-1) WFLYSRV0028: Stopped deployment cluster-test.war (runtime-name: cluster-test.war) in 631ms
+2016-05-05 14:50:42,954 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0008: Undertow HTTP listener default suspending
+2016-05-05 14:50:42,955 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0007: Undertow HTTP listener default stopped, was bound to /127.0.0.1:8280
+2016-05-05 14:50:42,958 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0008: Undertow AJP listener ajp suspending
+2016-05-05 14:50:42,960 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0007: Undertow AJP listener ajp stopped, was bound to /127.0.0.1:8209
+2016-05-05 14:50:42,964 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0004: Undertow 1.2.9.Final stopping
+2016-05-05 14:51:12,812 WARN  [org.infinispan.transaction.impl.TransactionTable] (ServerService Thread Pool -- 78) ISPN000100: Stopping, but there are 0 local transactions and 1 remote transactions that did not finish in time.
+2016-05-05 14:51:12,819 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 78) WFLYCLINF0003: Stopped dist cache from web container
+2016-05-05 14:51:12,821 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-1) ISPN000080: Disconnecting JGroups channel web
+2016-05-05 14:51:12,823 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-1) ISPN000082: Stopping the RpcDispatcher for channel web
+2016-05-05 14:51:12,846 INFO  [org.jboss.as] (MSC service thread 1-8) WFLYSRV0050: WildFly Full 9.0.2.Final (WildFly Core 1.0.2.Final) stopped in 30514ms
+2016-05-05 14:57:19,356 INFO  [org.jboss.modules] (main) JBoss Modules version 1.4.3.Final
+2016-05-05 14:57:19,874 INFO  [org.jboss.msc] (main) JBoss MSC version 1.2.6.Final
+2016-05-05 14:57:20,060 INFO  [org.jboss.as] (MSC service thread 1-7) WFLYSRV0049: WildFly Full 9.0.2.Final (WildFly Core 1.0.2.Final) starting
+2016-05-05 14:57:20,066 DEBUG [org.jboss.as.config] (MSC service thread 1-7) Configured system properties:
+	[Server:SOAP-server-1] = 
+	awt.toolkit = sun.awt.X11.XToolkit
+	file.encoding = UTF-8
+	file.encoding.pkg = sun.io
+	file.separator = /
+	java.awt.graphicsenv = sun.awt.X11GraphicsEnvironment
+	java.awt.headless = true
+	java.awt.printerjob = sun.print.PSPrinterJob
+	java.class.path = /home/jurikolo/wf_cookbook/wildfly902/jboss-modules.jar
+	java.class.version = 52.0
+	java.endorsed.dirs = /opt/oracle/jdk1.8.0_45x64/jre/lib/endorsed
+	java.ext.dirs = /opt/oracle/jdk1.8.0_45x64/jre/lib/ext:/usr/java/packages/lib/ext
+	java.home = /opt/oracle/jdk1.8.0_45x64/jre
+	java.io.tmpdir = /tmp
+	java.library.path = /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+	java.net.preferIPv4Stack = true
+	java.runtime.name = Java(TM) SE Runtime Environment
+	java.runtime.version = 1.8.0_45-b14
+	java.specification.name = Java Platform API Specification
+	java.specification.vendor = Oracle Corporation
+	java.specification.version = 1.8
+	java.util.logging.manager = org.jboss.logmanager.LogManager
+	java.vendor = Oracle Corporation
+	java.vendor.url = http://java.oracle.com/
+	java.vendor.url.bug = http://bugreport.sun.com/bugreport/
+	java.version = 1.8.0_45
+	java.vm.info = mixed mode
+	java.vm.name = Java HotSpot(TM) 64-Bit Server VM
+	java.vm.specification.name = Java Virtual Machine Specification
+	java.vm.specification.vendor = Oracle Corporation
+	java.vm.specification.version = 1.8
+	java.vm.vendor = Oracle Corporation
+	java.vm.version = 25.45-b02
+	javax.management.builder.initial = org.jboss.as.jmx.PluggableMBeanServerBuilder
+	javax.xml.datatype.DatatypeFactory = __redirected.__DatatypeFactory
+	javax.xml.parsers.DocumentBuilderFactory = __redirected.__DocumentBuilderFactory
+	javax.xml.parsers.SAXParserFactory = __redirected.__SAXParserFactory
+	javax.xml.stream.XMLEventFactory = __redirected.__XMLEventFactory
+	javax.xml.stream.XMLInputFactory = __redirected.__XMLInputFactory
+	javax.xml.stream.XMLOutputFactory = __redirected.__XMLOutputFactory
+	javax.xml.transform.TransformerFactory = __redirected.__TransformerFactory
+	javax.xml.validation.SchemaFactory:http://www.w3.org/2001/XMLSchema = __redirected.__SchemaFactory
+	javax.xml.xpath.XPathFactory:http://java.sun.com/jaxp/xpath/dom = __redirected.__XPathFactory
+	jboss.default.multicast.address = 230.0.0.5
+	jboss.domain.base.dir = /home/jurikolo/wf_cookbook/wildfly902/cl-dmn2-host-1
+	jboss.domain.config.dir = /home/jurikolo/wf_cookbook/wildfly902/cl-dmn2-host-1/configuration
+	jboss.domain.master.address = 127.0.0.1
+	jboss.home.dir = /home/jurikolo/wf_cookbook/wildfly902
+	jboss.host.name = t2007030
+	jboss.modules.dir = /home/jurikolo/wf_cookbook/wildfly902/modules
+	jboss.modules.system.pkgs = org.jboss.byteman
+	jboss.node.name = host-1:SOAP-server-1
+	jboss.qualified.host.name = t2007030.tele2.net
+	jboss.server.base.dir = /home/jurikolo/wf_cookbook/wildfly902/cl-dmn2-host-1/servers/SOAP-server-1
+	jboss.server.config.dir = /home/jurikolo/wf_cookbook/wildfly902/cl-dmn2-host-1/servers/SOAP-server-1/configuration
+	jboss.server.data.dir = /home/jurikolo/wf_cookbook/wildfly902/cl-dmn2-host-1/servers/SOAP-server-1/data
+	jboss.server.deploy.dir = /home/jurikolo/wf_cookbook/wildfly902/cl-dmn2-host-1/servers/SOAP-server-1/data/content
+	jboss.server.log.dir = /home/jurikolo/wf_cookbook/wildfly902/cl-dmn2-host-1/servers/SOAP-server-1/log
+	jboss.server.name = SOAP-server-1
+	jboss.server.persist.config = true
+	jboss.server.temp.dir = /home/jurikolo/wf_cookbook/wildfly902/cl-dmn2-host-1/servers/SOAP-server-1/tmp
+	line.separator = 
+
+	logging.configuration = file:/home/jurikolo/wf_cookbook/wildfly902/cl-dmn2-host-1/servers/SOAP-server-1/data/logging.properties
+	module.path = /home/jurikolo/wf_cookbook/wildfly902/modules
+	org.jboss.resolver.warning = true
+	org.xml.sax.driver = __redirected.__XMLReaderFactory
+	os.arch = amd64
+	os.name = Linux
+	os.version = 4.4.8-300.fc23.x86_64
+	path.separator = :
+	rest.multicast.address = 230.0.0.4
+	soap.multicast.address = 230.0.0.5
+	sun.arch.data.model = 64
+	sun.boot.class.path = /opt/oracle/jdk1.8.0_45x64/jre/lib/resources.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/rt.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/sunrsasign.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/jsse.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/jce.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/charsets.jar:/opt/oracle/jdk1.8.0_45x64/jre/lib/jfr.jar:/opt/oracle/jdk1.8.0_45x64/jre/classes
+	sun.boot.library.path = /opt/oracle/jdk1.8.0_45x64/jre/lib/amd64
+	sun.cpu.endian = little
+	sun.cpu.isalist = 
+	sun.desktop = gnome
+	sun.io.unicode.encoding = UnicodeLittle
+	sun.java.command = /home/jurikolo/wf_cookbook/wildfly902/jboss-modules.jar -mp /home/jurikolo/wf_cookbook/wildfly902/modules org.jboss.as.server
+	sun.java.launcher = SUN_STANDARD
+	sun.jnu.encoding = UTF-8
+	sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+	sun.os.patch.level = unknown
+	user.country = US
+	user.dir = /home/jurikolo/wf_cookbook/wildfly902
+	user.home = /home/jurikolo
+	user.language = en
+	user.name = jurikolo
+	user.timezone = Europe/Riga
+2016-05-05 14:57:20,076 DEBUG [org.jboss.as.config] (MSC service thread 1-7) VM Arguments: -D[Server:SOAP-server-1] -Xms384m -Xmx384m -Djava.awt.headless=true -Djava.net.preferIPv4Stack=true -Djboss.default.multicast.address=230.0.0.5 -Djboss.domain.base.dir=cl-dmn2-host-1 -Djboss.domain.master.address=127.0.0.1 -Djboss.home.dir=/home/jurikolo/wf_cookbook/wildfly902 -Djboss.modules.system.pkgs=org.jboss.byteman -Drest.multicast.address=230.0.0.4 -Dsoap.multicast.address=230.0.0.5 -Djboss.server.log.dir=/home/jurikolo/wf_cookbook/wildfly902/cl-dmn2-host-1/servers/SOAP-server-1/log -Djboss.server.temp.dir=/home/jurikolo/wf_cookbook/wildfly902/cl-dmn2-host-1/servers/SOAP-server-1/tmp -Djboss.server.data.dir=/home/jurikolo/wf_cookbook/wildfly902/cl-dmn2-host-1/servers/SOAP-server-1/data -Dlogging.configuration=file:/home/jurikolo/wf_cookbook/wildfly902/cl-dmn2-host-1/servers/SOAP-server-1/data/logging.properties 
+2016-05-05 14:57:20,176 INFO  [org.xnio] (MSC service thread 1-5) XNIO version 3.3.1.Final
+2016-05-05 14:57:20,206 INFO  [org.xnio.nio] (MSC service thread 1-5) XNIO NIO Implementation Version 3.3.1.Final
+2016-05-05 14:57:20,270 INFO  [org.jboss.remoting] (MSC service thread 1-5) JBoss Remoting version 4.0.9.Final
+2016-05-05 14:58:12,767 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 34) WFLYCTL0028: Attribute 'default-stack' in the resource at address '/subsystem=jgroups' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2016-05-05 14:58:12,773 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 11) WFLYCTL0028: Attribute 'job-repository-type' in the resource at address '/subsystem=batch' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2016-05-05 14:58:12,783 INFO  [org.jboss.as.controller.management-deprecated] (ServerService Thread Pool -- 32) WFLYCTL0028: Attribute 'enabled' in the resource at address '/subsystem=datasources/data-source=ExampleDS' is deprecated, and may be removed in future version. See the attribute description in the output of the read-resource-description operation to learn more about the deprecation.
+2016-05-05 14:58:13,201 WARN  [org.jboss.as.txn] (ServerService Thread Pool -- 37) WFLYTX0013: Node identifier property is set to the default value. Please make sure it is unique.
+2016-05-05 14:58:13,207 INFO  [org.jboss.as.security] (ServerService Thread Pool -- 39) WFLYSEC0002: Activating Security Subsystem
+2016-05-05 14:58:13,244 INFO  [org.jboss.as.security] (MSC service thread 1-2) WFLYSEC0001: Current PicketBox version=4.9.2.Final
+2016-05-05 14:58:13,247 INFO  [org.jboss.as.clustering.jgroups] (ServerService Thread Pool -- 51) WFLYCLJG0001: Activating JGroups subsystem.
+2016-05-05 14:58:13,270 INFO  [org.jboss.as.naming] (ServerService Thread Pool -- 45) WFLYNAM0001: Activating Naming Subsystem
+2016-05-05 14:58:13,275 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 55) WFLYCLINF0001: Activating Infinispan subsystem.
+2016-05-05 14:58:13,276 INFO  [org.jboss.as.webservices] (ServerService Thread Pool -- 35) WFLYWS0002: Activating WebServices Extension
+2016-05-05 14:58:13,312 INFO  [org.jboss.as.jsf] (ServerService Thread Pool -- 48) WFLYJSF0007: Activated the following JSF Implementations: [main]
+2016-05-05 14:58:13,317 INFO  [org.jboss.as.connector] (MSC service thread 1-1) WFLYJCA0009: Starting JCA Subsystem (IronJacamar 1.2.5.Final)
+2016-05-05 14:58:13,318 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 36) WFLYUT0003: Undertow 1.2.9.Final starting
+2016-05-05 14:58:13,318 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0003: Undertow 1.2.9.Final starting
+2016-05-05 14:58:13,320 INFO  [org.jboss.as.connector.subsystems.datasources] (ServerService Thread Pool -- 59) WFLYJCA0004: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+2016-05-05 14:58:13,339 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-5) WFLYJCA0018: Started Driver service with driver-name = h2
+2016-05-05 14:58:13,389 INFO  [org.wildfly.extension.io] (ServerService Thread Pool -- 56) WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+2016-05-05 14:58:13,437 INFO  [org.jboss.as.naming] (MSC service thread 1-4) WFLYNAM0003: Starting Naming Service
+2016-05-05 14:58:13,471 INFO  [org.jboss.as.mail.extension] (MSC service thread 1-8) WFLYMAIL0001: Bound mail session [java:jboss/mail/Default]
+2016-05-05 14:58:13,567 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 36) WFLYUT0014: Creating file handler for path /home/jurikolo/wf_cookbook/wildfly902/welcome-content
+2016-05-05 14:58:13,664 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0012: Started server default-server.
+2016-05-05 14:58:13,761 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-1) WFLYUT0018: Host default-host starting
+2016-05-05 14:58:13,829 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0006: Undertow AJP listener ajp listening on /127.0.0.1:8209
+2016-05-05 14:58:13,835 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-4) WFLYUT0006: Undertow HTTP listener default listening on /127.0.0.1:8280
+2016-05-05 14:58:13,850 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 62) MODCLUSTER000001: Initializing mod_cluster version 1.3.1.Final
+2016-05-05 14:58:13,889 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 62) MODCLUSTER000032: Listening to proxy advertisements on /224.0.1.105:23364
+2016-05-05 14:58:14,217 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-6) WFLYSRV0027: Starting deployment of "cluster-test.war" (runtime-name: "cluster-test.war")
+2016-05-05 14:58:14,261 INFO  [org.jboss.ws.common.management] (MSC service thread 1-5) JBWS022052: Starting JBoss Web Services - Stack CXF Server 5.0.0.Final
+2016-05-05 14:58:14,912 WARNING [org.jgroups.protocols.UDP] (MSC service thread 1-7) JGRP000015: the send buffer of socket DatagramSocket was set to 640KB, but the OS only allocated 212.99KB. This might lead to performance problems. Please set your max send buffer in the OS correctly (e.g. net.core.wmem_max on Linux)
+2016-05-05 14:58:14,913 WARNING [org.jgroups.protocols.UDP] (MSC service thread 1-7) JGRP000015: the receive buffer of socket DatagramSocket was set to 20MB, but the OS only allocated 212.99KB. This might lead to performance problems. Please set your max receive buffer in the OS correctly (e.g. net.core.rmem_max on Linux)
+2016-05-05 14:58:14,915 WARNING [org.jgroups.protocols.UDP] (MSC service thread 1-7) JGRP000015: the send buffer of socket MulticastSocket was set to 640KB, but the OS only allocated 212.99KB. This might lead to performance problems. Please set your max send buffer in the OS correctly (e.g. net.core.wmem_max on Linux)
+2016-05-05 14:58:14,917 WARNING [org.jgroups.protocols.UDP] (MSC service thread 1-7) JGRP000015: the receive buffer of socket MulticastSocket was set to 25MB, but the OS only allocated 212.99KB. This might lead to performance problems. Please set your max receive buffer in the OS correctly (e.g. net.core.rmem_max on Linux)
+2016-05-05 14:58:14,924 INFO  [stdout] (MSC service thread 1-7) 
+2016-05-05 14:58:14,924 INFO  [stdout] (MSC service thread 1-7) -------------------------------------------------------------------
+2016-05-05 14:58:14,924 INFO  [stdout] (MSC service thread 1-7) GMS: address=host-1:SOAP-server-1, cluster=ee, physical address=127.0.0.1:55400
+2016-05-05 14:58:14,925 INFO  [stdout] (MSC service thread 1-7) -------------------------------------------------------------------
+2016-05-05 14:58:18,049 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 62) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-05-05 14:58:18,054 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 62) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-05-05 14:58:18,058 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 63) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-05-05 14:58:18,060 INFO  [org.infinispan.configuration.cache.EvictionConfigurationBuilder] (ServerService Thread Pool -- 63) ISPN000152: Passivation configured without an eviction policy being selected. Only manually evicted entities will be passivated.
+2016-05-05 14:58:18,365 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (ServerService Thread Pool -- 63) ISPN000078: Starting JGroups channel web
+2016-05-05 14:58:18,385 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (ServerService Thread Pool -- 63) ISPN000094: Received new cluster view for channel web: [host-1:SOAP-server-1|0] (1) [host-1:SOAP-server-1]
+2016-05-05 14:58:18,397 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (ServerService Thread Pool -- 63) ISPN000079: Channel web local address is host-1:SOAP-server-1, physical addresses are [127.0.0.1:55400]
+2016-05-05 14:58:18,403 INFO  [org.infinispan.factories.GlobalComponentRegistry] (ServerService Thread Pool -- 63) ISPN000128: Infinispan version: Infinispan 'Insanely Bad Elf' 7.2.3.Final
+2016-05-05 14:58:18,683 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 63) WFLYCLINF0002: Started cluster-test.war cache from web container
+2016-05-05 14:58:18,683 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 64) WFLYCLINF0002: Started dist cache from web container
+2016-05-05 14:58:24,393 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (Incoming-2,ee,host-1:SOAP-server-1) ISPN000094: Received new cluster view for channel web: [host-1:SOAP-server-1|1] (2) [host-1:SOAP-server-1, host-2:SOAP-server-2]
+2016-05-05 14:58:25,218 INFO  [org.infinispan.CLUSTER] (remote-thread--p3-t2) ISPN000310: Starting cluster-wide rebalance for cache dist, topology CacheTopology{id=1, rebalanceId=1, currentCH=DefaultConsistentHash{ns=80, owners = (1)[host-1:SOAP-server-1: 80+0]}, pendingCH=DefaultConsistentHash{ns=80, owners = (2)[host-1:SOAP-server-1: 40+40, host-2:SOAP-server-2: 40+40]}, unionCH=null, actualMembers=[host-1:SOAP-server-1, host-2:SOAP-server-2]}
+2016-05-05 14:58:25,221 INFO  [org.infinispan.CLUSTER] (remote-thread--p3-t3) ISPN000310: Starting cluster-wide rebalance for cache cluster-test.war, topology CacheTopology{id=1, rebalanceId=1, currentCH=DefaultConsistentHash{ns=80, owners = (1)[host-1:SOAP-server-1: 80+0]}, pendingCH=DefaultConsistentHash{ns=80, owners = (2)[host-1:SOAP-server-1: 40+40, host-2:SOAP-server-2: 40+40]}, unionCH=null, actualMembers=[host-1:SOAP-server-1, host-2:SOAP-server-2]}
+2016-05-05 14:58:25,438 INFO  [org.infinispan.CLUSTER] (remote-thread--p3-t3) ISPN000336: Finished cluster-wide rebalance for cache cluster-test.war, topology id = 1
+2016-05-05 14:58:25,447 INFO  [org.infinispan.CLUSTER] (remote-thread--p3-t3) ISPN000336: Finished cluster-wide rebalance for cache dist, topology id = 1
+2016-05-05 14:59:04,022 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-3) WFLYJCA0001: Bound data source [java:jboss/datasources/ExampleDS]
+2016-05-05 14:59:04,255 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 66) WFLYUT0021: Registered web context: /cluster-test
+2016-05-05 14:59:04,296 INFO  [org.jboss.as.server] (Controller Boot Thread) WFLYSRV0010: Deployed "cluster-test.war" (runtime-name : "cluster-test.war")
+2016-05-05 14:59:04,458 INFO  [org.jboss.as] (Controller Boot Thread) WFLYSRV0025: WildFly Full 9.0.2.Final (WildFly Core 1.0.2.Final) started in 105895ms - Started 327 of 508 services (281 services are lazy, passive or on-demand)
+2016-05-05 14:59:26,917 INFO  [stdout] (default task-1) ********************************+
+2016-05-05 14:59:26,917 INFO  [stdout] (default task-1) Visitor(s): 0
+2016-05-05 14:59:26,918 INFO  [stdout] (default task-1) ********************************+
+2016-05-05 15:02:46,358 INFO  [stdout] (default task-2) ********************************+
+2016-05-05 15:02:46,358 INFO  [stdout] (default task-2) Visitor(s): 0
+2016-05-05 15:02:46,358 INFO  [stdout] (default task-2) ********************************+
+2016-05-05 15:02:49,972 INFO  [stdout] (default task-4) ********************************+
+2016-05-05 15:02:49,973 INFO  [stdout] (default task-4) Visitor(s): 1
+2016-05-05 15:02:49,973 INFO  [stdout] (default task-4) ********************************+
+2016-05-05 15:04:58,191 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (Incoming-11,ee,host-1:SOAP-server-1) ISPN000094: Received new cluster view for channel web: [host-1:SOAP-server-1|2] (1) [host-1:SOAP-server-1]
+2016-05-05 15:04:59,554 INFO  [org.jboss.as.server] (Thread-2) WFLYSRV0220: Server shutdown has been requested.
+2016-05-05 15:04:59,664 INFO  [org.wildfly.extension.undertow] (ServerService Thread Pool -- 69) WFLYUT0022: Unregistered web context: /cluster-test
+2016-05-05 15:04:59,698 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-5) WFLYUT0019: Host default-host stopping
+2016-05-05 15:04:59,688 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 74) ISPN000029: Passivating all entries to disk
+2016-05-05 15:04:59,700 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 69) ISPN000029: Passivating all entries to disk
+2016-05-05 15:04:59,702 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 69) ISPN000030: Passivated 0 entries in 1 milliseconds
+2016-05-05 15:04:59,704 INFO  [org.infinispan.eviction.impl.PassivationManagerImpl] (ServerService Thread Pool -- 74) ISPN000030: Passivated 8 entries in 15 milliseconds
+2016-05-05 15:04:59,707 INFO  [org.jboss.as.connector.subsystems.datasources] (MSC service thread 1-2) WFLYJCA0010: Unbound data source [java:jboss/datasources/ExampleDS]
+2016-05-05 15:04:59,714 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 69) WFLYCLINF0003: Stopped dist cache from web container
+2016-05-05 15:04:59,714 INFO  [org.jboss.as.clustering.infinispan] (ServerService Thread Pool -- 74) WFLYCLINF0003: Stopped cluster-test.war cache from web container
+2016-05-05 15:04:59,740 INFO  [org.jboss.modcluster] (ServerService Thread Pool -- 74) MODCLUSTER000002: Initiating mod_cluster shutdown
+2016-05-05 15:04:59,745 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-4) ISPN000080: Disconnecting JGroups channel web
+2016-05-05 15:04:59,745 INFO  [org.infinispan.remoting.transport.jgroups.JGroupsTransport] (MSC service thread 1-4) ISPN000082: Stopping the RpcDispatcher for channel web
+2016-05-05 15:04:59,746 INFO  [org.jboss.as.connector.deployers.jdbc] (MSC service thread 1-1) WFLYJCA0019: Stopped Driver service with driver-name = h2
+2016-05-05 15:04:59,818 INFO  [org.hibernate.validator.internal.util.Version] (MSC service thread 1-5) HV000001: Hibernate Validator 5.1.3.Final
+2016-05-05 15:04:59,903 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0008: Undertow AJP listener ajp suspending
+2016-05-05 15:04:59,903 INFO  [org.jboss.as.server.deployment] (MSC service thread 1-5) WFLYSRV0028: Stopped deployment cluster-test.war (runtime-name: cluster-test.war) in 315ms
+2016-05-05 15:04:59,904 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0008: Undertow HTTP listener default suspending
+2016-05-05 15:04:59,906 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-8) WFLYUT0007: Undertow HTTP listener default stopped, was bound to /127.0.0.1:8280
+2016-05-05 15:04:59,906 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0007: Undertow AJP listener ajp stopped, was bound to /127.0.0.1:8209
+2016-05-05 15:04:59,907 INFO  [org.wildfly.extension.undertow] (MSC service thread 1-7) WFLYUT0004: Undertow 1.2.9.Final stopping
+2016-05-05 15:04:59,929 INFO  [org.jboss.as] (MSC service thread 1-4) WFLYSRV0050: WildFly Full 9.0.2.Final (WildFly Core 1.0.2.Final) stopped in 326ms
