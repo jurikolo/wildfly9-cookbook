@@ -49,12 +49,50 @@ HOW TO
 ./bin/domain.sh -Djboss.domain.base.dir=cl-dmn-host-1 \
 -Djboss.domain.master.address=127.0.0.1
 ```
-NOTE 1: you might have problems connecting slave to master due to both machenes
-are on localhost. As a workaround I added 2 domain controllers to slave
-host.xml so it searches for a DC longer
+You can verify result visiting http://localhost:8180/cluster-test and
+http://localhost:8280/cluster-test
+NOTE 1: you might have problems connecting slave to master due to both Wildfly
+instances are running on a localhost. As a workaround I added 2 domain 
+controllers to slave host.xml so it searches for a DC longer
 NOTE 2: to deploy a package I run following command from a shell:
 ```bash
 ./jboss-cli.sh --connect --command="deploy --force \
 /home/jurikolo/wf_cookbook/wildfly902/cluster-test.war"
 ```
 
+# Wildfly 9 single domain 2 UDP clusters
+This example configures Wildfly 9 domain and 2 slaves each having 2 separate
+servers as described in a book "Wildfly Cookbook", pages 204-216
+HOW TO
+------
+```bash```
+1. Copy directories cl-dmn2-master, cl-dmn2-host-1 and cl-dmn2-host-2 to the
+Wildfly9 directory
+2. Run domain controller: ./bin/domain.sh \
+-Djboss.domain.base.dir=cl-dmn2-master
+3. Run host-1:
+./bin/domain.sh \
+-Djboss.domain.base.dir=cl-dmn2-host-1 \
+-Djboss.domain.master.address=127.0.0.1 \
+-Drest.multicast.address=230.0.0.4 \
+-Dsoap.multicast.address=230.0.0.5
+4. Run host-2:
+./bin/domain.sh \
+-Djboss.domain.base.dir=cl-dmn2-host-2 \
+-Djboss.domain.master.address=127.0.0.1 \
+-Drest.multicast.address=230.0.0.4 \
+-Dsoap.multicast.address=230.0.0.5
+```
+You can verify verify result visiting http://localhost:8180/cluster-test ,
+http://localhost:8280/cluster-test/ , http://localhost:8380/cluster-test and
+http://localhost:8480/cluster-test . You should use different browsers for
+each cluster, in other case you will get amount of visitors = 0 due to cookie
+problems on a same host.
+NOTE 1: you might have problems connecting slave to master due to both Wildfly
+instances are running on a localhost. As a workaround I added 2 domain 
+controllers to slave host.xml so it searches for a DC longer
+NOTE 2: to deploy a package I run following command from a shell:
+```bash
+./jboss-cli.sh --connect --command="deploy --force \
+/home/jurikolo/wf_cookbook/wildfly902/cluster-test.war"
+```
