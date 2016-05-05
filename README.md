@@ -51,10 +51,10 @@ HOW TO
 ```
 You can verify result visiting http://localhost:8180/cluster-test and
 http://localhost:8280/cluster-test
-NOTE 1: you might have problems connecting slave to master due to both Wildfly
+* NOTE 1: you might have problems connecting slave to master due to both Wildfly
 instances are running on a localhost. As a workaround I added 2 domain 
 controllers to slave host.xml so it searches for a DC longer
-NOTE 2: to deploy a package I run following command from a shell:
+* NOTE 2: to deploy a package I run following command from a shell:
 ```bash
 ./jboss-cli.sh --connect --command="deploy --force \
 /home/jurikolo/wf_cookbook/wildfly902/cluster-test.war"
@@ -88,10 +88,10 @@ http://localhost:8280/cluster-test/ , http://localhost:8380/cluster-test and
 http://localhost:8480/cluster-test . You should use different browsers for
 each cluster, in other case you will get amount of visitors = 0 due to cookie
 problems on a same host.
-NOTE 1: you might have problems connecting slave to master due to both Wildfly
+* NOTE 1: you might have problems connecting slave to master due to both Wildfly
 instances are running on a localhost. As a workaround I added 2 domain 
 controllers to slave host.xml so it searches for a DC longer
-NOTE 2: to deploy a package I run following command from a shell:
+* NOTE 2: to deploy a package I run following command from a shell:
 ```bash
 ./jboss-cli.sh --connect --command="deploy --force \
 /home/jurikolo/wf_cookbook/wildfly902/cluster-test.war"
